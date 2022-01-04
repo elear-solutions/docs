@@ -3,10 +3,11 @@
 Analytics Client Applications
 =============================
 
-<Introduction to this sub-section - Owner: Manav>
+..
+   <Introduction to this sub-section - Owner: Manav>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   browser_js_analytics_client_applications
+   analytics_client_applications/browser_js_analytics_client_applications

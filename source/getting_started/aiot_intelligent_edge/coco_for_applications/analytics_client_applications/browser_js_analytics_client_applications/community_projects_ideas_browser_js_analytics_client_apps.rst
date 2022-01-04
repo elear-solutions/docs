@@ -3,5 +3,6 @@
 Community Projects and Use Case Ideas
 =====================================
 
-<Content here - Owner: Ashish
-Suggestions from Ashish - Cold Chain Temperature Monitoring on the go, Air Quality Management on Factory Floor, etc.>
+.. 
+    <Content here - Owner: Ashish 
+    Suggestions from Ashish - Cold Chain Temperature Monitoring on the go, Air Quality Management on Factory Floor, etc.>

@@ -3,5 +3,6 @@
 Community Projects and Use Case Ideas
 =====================================
 
-<Content here - Owner: Ashish
-Suggestions from Ashish - Energy Optimizer Assistant, etc.]>
+..
+    <Content here - Owner: Ashish
+    Suggestions from Ashish - Energy Optimizer Assistant, etc.]>

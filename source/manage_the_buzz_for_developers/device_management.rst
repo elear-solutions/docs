@@ -3,12 +3,13 @@
 Device Management
 =================
 
-<Introduction to this sub-section - Owner: Manav>
+..
+   <Introduction to this sub-section - Owner: Manav>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   secure_manufacturing
-   remote_diagnostics
-   ota_updates
+   device_management/secure_manufacturing
+   device_management/remote_diagnostics
+   device_management/ota_updates

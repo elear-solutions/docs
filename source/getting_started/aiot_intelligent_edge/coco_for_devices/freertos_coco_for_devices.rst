@@ -2,6 +2,6 @@
 
 FreeRTOS (coming soon!)
 =======================
-
-<Content here - Owner: Manav
-Suggestion from Ashish - Coming Soon Placeholder Image>
+..
+    <Content here - Owner: Manav
+    Suggestion from Ashish - Coming Soon Placeholder Image>

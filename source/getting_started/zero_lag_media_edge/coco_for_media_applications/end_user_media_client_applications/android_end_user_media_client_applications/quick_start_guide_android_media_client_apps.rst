@@ -3,5 +3,6 @@
 Quick Start Guide
 =================
 
-<Content here - Owner: Krishna
-Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully.>
+..
+    <Content here - Owner: Krishna
+    Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully.>

@@ -3,10 +3,11 @@
 Ecosystem Bridge Applications
 =============================
 
-<Introduction to this sub-section - Owner: Manav>
+..
+   <Introduction to this sub-section - Owner: Manav>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   rest_ecosystem_bridge_applications
+   ecosystem_bridge_applications/rest_ecosystem_bridge_applications
