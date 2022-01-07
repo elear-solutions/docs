@@ -1,8 +1,18 @@
 # Setup Steps
 
+- If using docker see [Docker](#docker)
+
 - If python virtual environment is already created for your local docs directory see [Usage](#usage) steps else start with [Installation](#installation).
 
 - Checkout the docs directory and execute the below commands.
+
+## Docker
+
+```console
+> docker build . -t sphinx:latest
+> docker run --rm -it -h sphinx -v $(pwd):/mnt/host/docs -w /mnt/host/docs -p 8000:8000 sphinx
+> sphinx-autobuild ./source/ ./build/html/ --port 8000 --host 0.0.0.0
+```
 
 ## Installation
 
