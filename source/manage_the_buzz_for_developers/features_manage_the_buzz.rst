@@ -3,5 +3,9 @@
 Features
 ========
 
-<Content here - Owner: Narendra>
+- Register and Manage Apps
+- Register Products and Manage Devices
+- Secure Manufacturing
+- Remote Diagnostics
+- OTA Updates
 
