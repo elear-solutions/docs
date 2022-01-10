@@ -3,5 +3,7 @@
 Pre-Install Checklist
 =====================
 
-..
-    <Content here - Owner: Theja>
+You will need: 
+
+1. Ubuntu to run the app 
+2. gcc to compile it.

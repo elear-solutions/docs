@@ -6,12 +6,7 @@ Quick Start Guide
 Build and run your first Device App in a few short steps by following
 the guide below.
 
-You will need: 
-
-1. Ubuntu to run the app 
-2. gcc to compile it.
-
-1. ‘Signup’ for a new COCO account or ‘Sign In’ if you have one by following this `link here <https://manage.getcoco.buzz/>`__
+1. ‘Signup’ for a new COCO account or ‘Sign In’ if you have one by following this `link <https://manage.getcoco.buzz/>`__
 ------------------------------------------------------------------------------------------------------------------------------
 
 .. image:: quick_start_guide_linux_coco_for_devices/step1.png
@@ -77,7 +72,7 @@ a. Run the Sample Device App using a command similar to:
 
    ::
 
-       sudo <Sample Device App path>
+       sudo <Sample Device App path> -d <Working Directory path> -c <config.txt path>
 
 b. Download the ‘COCO Home’ App on your Mobile Phone (from the Apple or
    Google Store), if it’s not already downloaded.
