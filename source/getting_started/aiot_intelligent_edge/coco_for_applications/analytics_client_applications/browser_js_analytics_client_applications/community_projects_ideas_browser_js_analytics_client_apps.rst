@@ -3,6 +3,12 @@
 Community Projects and Use Case Ideas
 =====================================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Ashish
+
 .. 
-    <Content here - Owner: Ashish 
-    Suggestions from Ashish - Cold Chain Temperature Monitoring on the go, Air Quality Management on Factory Floor, etc.>
+    <Suggestions from Ashish - Cold Chain Temperature Monitoring on the go, Air Quality Management on Factory Floor, etc.>

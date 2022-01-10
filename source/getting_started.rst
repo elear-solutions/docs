@@ -3,8 +3,15 @@
 Getting Started
 ===============
 
+.. figure:: _static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
 ..
-   <Introduction to this section - Owner: Manav>
+   <Introduction to this section>
 
 .. toctree::
    :maxdepth: 5

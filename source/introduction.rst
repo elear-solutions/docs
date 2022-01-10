@@ -2,9 +2,16 @@
 
 Introduction
 ============
+ 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Ashish
 
 ..
-   <Introduction to this section - Owner: Ashish>
+   <Introduction to this section>
 
 .. toctree::
    :maxdepth: 5
