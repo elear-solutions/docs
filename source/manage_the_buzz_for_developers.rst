@@ -3,7 +3,7 @@
 Manage the Buzz for Developers
 ==============================
 
-<Introduction to this sub-section - Owner: Manav>
+<Introduction to this section - Owner: Manav>
 
 .. toctree::
    :maxdepth: 5
