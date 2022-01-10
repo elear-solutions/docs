@@ -3,5 +3,5 @@
 API Reference Documentation
 ===========================
 
-..
-    <Content here - Owner: Theja>
+COCO Device SDK API Documentation:
+`link here <https://docs.getcoco.buzz/iot-sdk/c-api-for-devices/index.html>`__
