@@ -3,6 +3,12 @@
 Quick Start Guide
 =================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Rohan
+
 ..
-    <Content here - Owner: Rohan
-    Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully.>
+    <Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully.>

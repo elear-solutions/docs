@@ -3,5 +3,12 @@
 Sample App Walkthrough
 ======================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Krishna
+
 ..
     <Content here - Owner: Krishna>

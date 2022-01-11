@@ -3,5 +3,9 @@
 Download And Install
 ====================
 
-.. 
-    <Content here - Owner: Deekshith>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Deekshith

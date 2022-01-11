@@ -2,7 +2,6 @@
 
 Quick Start Guide
 =================
-
 Build and run your first Device App in a few short steps by following
 the guide below.
 

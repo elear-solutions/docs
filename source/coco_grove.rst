@@ -3,6 +3,12 @@
 COCO Grove (coming soon!)
 =========================
 
-..
-    <Inroduction to this section - Owner: Ashish>
+.. figure:: /_static/coming-soon.png
+   :align: center
 
+   **Coming Soon**
+
+.. sectionauthor:: Ashish
+
+..
+    <Inroduction to this section>

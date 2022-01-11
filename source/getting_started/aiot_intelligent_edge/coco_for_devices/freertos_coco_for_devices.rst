@@ -2,6 +2,13 @@
 
 FreeRTOS (coming soon!)
 =======================
+
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
 ..
-    <Content here - Owner: Manav
-    Suggestion from Ashish - Coming Soon Placeholder Image>
+    <Suggestion from Ashish - Coming Soon Placeholder Image>

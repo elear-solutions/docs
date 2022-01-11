@@ -3,5 +3,9 @@
 Sample App Walkthrough
 ======================
 
-..
-    <Content here - Owner: Rohan>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Rohan
