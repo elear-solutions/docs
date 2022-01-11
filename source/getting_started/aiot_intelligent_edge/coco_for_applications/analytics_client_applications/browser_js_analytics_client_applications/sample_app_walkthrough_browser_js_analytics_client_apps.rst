@@ -47,7 +47,7 @@ For this we need to add the SDK in **cocoanalyticssdk-js-energy-sample-app/src/i
 .. code:: html
 
 
-  <script type="text/javascript" src="https://static-assets.getcoco.buzz/scripts/sdk-dev.min.js"></script>
+  <script type="text/javascript"src="https://static-assets.getcoco.buzz/scripts/coco-analytics-sdk.min.js"></script>
 
 Now call the connect function in the SDK to intialize and store the analyticsHandle which is used to get analytics data. In this application initialization is made at **cocoanalyticssdk-js-energy-sample-app/src/app/components/total-home-consumption/total-home-consumption.component.ts**
 
