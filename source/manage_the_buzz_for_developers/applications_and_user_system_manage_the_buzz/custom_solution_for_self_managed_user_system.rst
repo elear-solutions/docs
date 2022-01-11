@@ -3,9 +3,6 @@
 Custom Solution for Self-managed User System
 ============================================
 
-..
-   <Introduction to this sub-section - Owner: Narendra>
-
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:

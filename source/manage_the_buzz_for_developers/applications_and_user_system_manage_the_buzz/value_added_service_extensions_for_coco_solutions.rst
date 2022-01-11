@@ -2,9 +2,12 @@
 
 Value-Added Service Extensions for COCO Solutions
 =================================================
-
-..
-   <Introduction to this sub-section - Owner: Narendra>
+These can be used by the developers to create apps for integrations or
+extending the functionality of the existing solutions based on the COCO
+Platform. For example, various apps can be developed based on COCO Home
+Solution like Voice Integration with COCO Home, custom analytics app,
+etc. Here, the end user authorizes the application to access his/her
+COCONets from the user's COCO account.
 
 .. toctree::
    :maxdepth: 5
