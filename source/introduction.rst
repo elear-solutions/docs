@@ -2,12 +2,20 @@
 
 Introduction
 ============
+ 
+.. figure:: /_static/coming-soon.png
+   :align: center
 
-<Introduction to this section - Owner: Ashish>
+   **Coming Soon**
+
+.. sectionauthor:: Ashish
+
+..
+   <Introduction to this section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   what_is_coco
-   coco_real_time_internet
+   introduction/what_is_coco
+   introduction/coco_real_time_internet

@@ -3,10 +3,18 @@
 Analytics Client Applications
 =============================
 
-<Introduction to this sub-section - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
+..
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   browser_js_analytics_client_applications
+   analytics_client_applications/browser_js_analytics_client_applications

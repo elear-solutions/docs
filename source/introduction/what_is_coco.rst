@@ -3,5 +3,9 @@
 What is COCO?
 =============
 
-<Content here - Owner: Ashish>
+.. figure:: /_static/coming-soon.png
+   :align: center
 
+   **Coming Soon**
+
+.. sectionauthor:: Ashish

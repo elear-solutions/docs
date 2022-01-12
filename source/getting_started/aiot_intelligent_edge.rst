@@ -3,14 +3,22 @@
 AIoT Intelligent Edge
 =====================
 
-<Introduction to this sub-section - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
+..
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   terminology_aiot
-   architecture_aiot
-   coco_standard
-   coco_for_devices
-   coco_for_applications
+   aiot_intelligent_edge/terminology_aiot
+   aiot_intelligent_edge/architecture_aiot
+   aiot_intelligent_edge/coco_standard
+   aiot_intelligent_edge/coco_for_devices
+   aiot_intelligent_edge/coco_for_applications

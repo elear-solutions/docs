@@ -3,11 +3,19 @@
 COCO For Media Applications
 ===========================
 
-<Introduction to this sub-section - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
+..
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   overview_coco_for_media_applications
-   end_user_media_client_applications
+   coco_for_media_applications/overview_coco_for_media_applications
+   coco_for_media_applications/end_user_media_client_applications

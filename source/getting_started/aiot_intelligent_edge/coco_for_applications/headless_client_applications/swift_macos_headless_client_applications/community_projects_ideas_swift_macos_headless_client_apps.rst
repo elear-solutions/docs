@@ -3,5 +3,12 @@
 Community Projects and Use Case Ideas
 =====================================
 
-<Content here - Owner: Ashish
-Suggestions from Ashish - Energy Optimizer Assistant, etc.>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Ashish
+
+..
+    <Suggestions from Ashish - Energy Optimizer Assistant, etc.>

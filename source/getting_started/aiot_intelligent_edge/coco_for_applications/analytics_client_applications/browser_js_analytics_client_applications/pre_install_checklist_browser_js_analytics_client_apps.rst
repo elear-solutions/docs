@@ -3,7 +3,7 @@
 Pre-Install Checklist
 =====================
 
-<Content here - Owner: Deekshith>
+.. sectionauthor:: Deekshith
 
 1. Git
 2. node (**Recommended to use version 16.0.0**)

@@ -3,7 +3,7 @@
 Sample App Walkthrough
 ======================
 
-<Content here - Owner: Deekshith>
+.. sectionauthor:: Deekshith
 
 Connect to COCO
 +++++++

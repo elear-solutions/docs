@@ -3,4 +3,9 @@
 Sample App Walkthrough
 ======================
 
-<Content here - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav

@@ -3,5 +3,12 @@
 Terminology
 ===========
 
-<Content here - Owner: Krishna
-Suggestions from Ashish - cover Channels, Streams, Subscriptions, etc.>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Krishna
+
+..
+    <Suggestions from Ashish - cover Channels, Streams, Subscriptions, etc.>

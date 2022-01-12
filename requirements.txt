@@ -1,0 +1,10 @@
+wheel
+myst-parser==0.16.1
+sphinx==4.3.2
+sphinx-copybutton==0.4.0
+sphinx-sitemap
+sphinx-autobuild==2021.3.14
+sphinx-rtd-theme
+requests
+sphinxcontrib-spelling
+sphinx-notfound-page

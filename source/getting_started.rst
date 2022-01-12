@@ -3,11 +3,19 @@
 Getting Started
 ===============
 
-<Introduction to this section - Owner: Manav>
+.. figure:: _static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
+..
+   <Introduction to this section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   aiot_intelligent_edge
-   zero_lag_media_edge
+   getting_started/aiot_intelligent_edge
+   getting_started/zero_lag_media_edge

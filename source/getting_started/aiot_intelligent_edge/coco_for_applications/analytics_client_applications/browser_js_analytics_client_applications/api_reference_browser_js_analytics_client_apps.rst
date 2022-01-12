@@ -3,6 +3,6 @@
 API Reference Documentation
 ===========================
 
-<Content here - Owner: Deekshith>
+.. sectionauthor:: Deekshith
 
 1. Refer complete analytics API's documentation `here <https://docs.getcoco.buzz/CocoAnalytics.html>`_ 

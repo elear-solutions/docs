@@ -3,6 +3,6 @@
 Download And Install
 ====================
 
-<Content here - Owner: Deekshith>
+.. sectionauthor:: Deekshith
 
 No additional software to be downloaded for this application.

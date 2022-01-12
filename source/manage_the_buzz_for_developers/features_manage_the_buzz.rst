@@ -3,5 +3,9 @@
 Features
 ========
 
-<Content here - Owner: Narendra>
+.. figure:: /_static/coming-soon.png
+   :align: center
 
+   **Coming Soon**
+
+.. sectionauthor:: Narendra

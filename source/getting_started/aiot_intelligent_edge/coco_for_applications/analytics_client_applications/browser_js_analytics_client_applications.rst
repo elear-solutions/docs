@@ -3,15 +3,23 @@
 Browser (JavaScript)
 ====================
 
-<Introduction to this sub-section - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
+.. 
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   pre_install_checklist_browser_js_analytics_client_apps
-   download_and_install_browser_js_analytics_client_apps
-   quick_start_guide_browser_js_analytics_client_apps
-   sample_app_walkthrough_browser_js_analytics_client_apps
-   api_reference_browser_js_analytics_client_apps
-   community_projects_ideas_browser_js_analytics_client_apps
+   browser_js_analytics_client_applications/pre_install_checklist_browser_js_analytics_client_apps
+   browser_js_analytics_client_applications/download_and_install_browser_js_analytics_client_apps
+   browser_js_analytics_client_applications/quick_start_guide_browser_js_analytics_client_apps
+   browser_js_analytics_client_applications/sample_app_walkthrough_browser_js_analytics_client_apps
+   browser_js_analytics_client_applications/api_reference_browser_js_analytics_client_apps
+   browser_js_analytics_client_applications/community_projects_ideas_browser_js_analytics_client_apps

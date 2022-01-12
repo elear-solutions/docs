@@ -3,10 +3,18 @@
 Ecosystem Bridge Applications
 =============================
 
-<Introduction to this sub-section - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+.. sectionauthor:: Manav
+
+..
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   rest_ecosystem_bridge_applications
+   ecosystem_bridge_applications/rest_ecosystem_bridge_applications
