@@ -15,6 +15,7 @@ Integration of COCO Home with Google/Alexa Home.
 
 Flow
 ++++
-<Websequence diagram for c2c app flow to be added>
+
+.. image:: ../../../../_static/C2CAppFlow.png
 
 .. sectionauthor:: Narendra
