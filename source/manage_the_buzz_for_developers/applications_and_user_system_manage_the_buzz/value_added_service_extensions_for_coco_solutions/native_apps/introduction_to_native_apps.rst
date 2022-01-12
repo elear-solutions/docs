@@ -11,6 +11,7 @@ and uses the Oauth Authorization Code grant with PKCE flow.
 
 Flow
 ----
-<add flow here>
+
+.. image:: ../../../../_static/NativeAppLoginFlow.png
 
 .. sectionauthor:: Narendra

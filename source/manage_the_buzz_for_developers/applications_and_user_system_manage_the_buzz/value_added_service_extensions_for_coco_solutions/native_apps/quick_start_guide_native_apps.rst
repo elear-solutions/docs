@@ -14,9 +14,46 @@ Register Application
 
 
 4. For grouping of applications, select existing app group or create a new one.
-  
-  
-<collaborate with App team (Akshay/Shrinivas) and get the required data/snippets here>
+5. By default all the capabilities are selected, choose capabilities required for application.
+6. Redirect URI is the URL where the authorization code should be received once the user authorizes which will further be exchanged, along with client credentials, using the token API
+7. Call COCO authorize API with client Id with response_type = code in the Native app.
+   
+   Authorize endpoint: GET https://api.getcoco.buzz/v1.0/oauth/authorize and takes the below query params.
+
+
+=============  ==================================================================================
+Params         Description
+=============  ==================================================================================
+client_id      Client Id of your application, you can find this value in application details.
+redirect_uri   Redirect URI of your application
+response_type  OAuth 2.0 endpoint returns an authorization code or token. Set it to ``code``.
+=============  ==================================================================================
+
+8. Call COCO token API with client credentials and grant type as authorization_code and the code received in the authorize call to get the access/refresh tokens to access coco cloud
+   
+   Token endpoint: POST https://api.getcoco.buzz/v1.0/oauth/token and takes the below params.
+
+
+=============  ==================================================================================
+Params         Description
+=============  ==================================================================================
+client_id      Client Id of your application, you can find this value in application details.
+redirect_uri   Redirect URI of your application
+grant_type     Oauth2.0 grant type ``authorization_code``   
+code           Code obtained from authorize request
+code_verifier  Code verifier for code challenge PKCE
+=============  ==================================================================================
+
+   To get new token when current token expires, send the below params to token endpoint.
+
+=============  ==================================================================================
+Params         Description
+=============  ==================================================================================
+client_id      Client Id of your application, you can find this value in application details.
+refresh_token  Refresh token
+grant_type     Oauth2.0 grant type ``refresh_token``
+=============  ==================================================================================
+
 
 
 

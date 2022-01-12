@@ -16,6 +16,6 @@ Integration of COCO Home with Google/Alexa Home.
 Flow
 ++++
 
-.. image:: ../../../../_static/C2CAppFlow.png
+.. image:: ../../../../_static/C2CAppLoginFlow.png
 
 .. sectionauthor:: Narendra

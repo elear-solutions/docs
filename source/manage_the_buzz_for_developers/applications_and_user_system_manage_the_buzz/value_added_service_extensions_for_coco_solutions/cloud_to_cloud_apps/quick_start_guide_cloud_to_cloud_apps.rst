@@ -38,8 +38,8 @@ response_type  OAuth 2.0 endpoint returns an authorization code or token. Set it
 Params         Description
 =============  ==================================================================================
 client_id      Client Id of your application, you can find this value in application details.
+client_secret  Client secret of the application, you can find this value in application details.
 grant_type     Oauth2.0 grant type ``authorization_code``   
-redirect_uri   Redirect URI of your application
 code           Code obtained from authorize request
 =============  ==================================================================================
 

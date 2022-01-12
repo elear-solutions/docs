@@ -11,6 +11,14 @@ COCO APIs are allowed access only while the user is present at the application.
 
 Flow
 ++++
-<Websequence diagram for spa app flow to be added>
+
+Using Client Library
+
+.. image:: ../../../../_static/SPAAppLoginFlow-UsingClientLibrary.png
+   :align: center
+
+Using Rest API
+
+.. image:: ../../../../_static/SPAAppLoginFlow-REST-API.png
 
 .. sectionauthor:: Narendra
