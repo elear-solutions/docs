@@ -3,9 +3,14 @@
 Introduction
 ============
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+If your intent is to utilise coco data without writing backend code,
+you can use this category of applications, where you need to only write
+application client code.
+These are Native applications which cannot store secrets
+and uses the Oauth Authorization Code grant with PKCE flow.
 
-   **Coming Soon**
+Flow
+----
+<add flow here>
 
 .. sectionauthor:: Narendra

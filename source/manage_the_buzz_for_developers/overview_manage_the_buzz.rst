@@ -3,9 +3,7 @@
 Overview
 ========
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
+The Manage the Buzz portal helps the developers/oems to manage their 
+apps/devices which are buzzed on COCO or required to access the COCO APIs.
 
 .. sectionauthor:: Narendra
