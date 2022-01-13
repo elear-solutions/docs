@@ -9,15 +9,12 @@ front-end browser client code. These Browser based applications cannot
 store secrets and uses the OAuth 2.0 Implicit grant flow. Here,
 COCO APIs are allowed access only while the user is present at the application.
 
-Flow
-++++
-
-Using Client Library
+**Using Client Library**
 
 .. image:: ../../../../_static/SPAAppLoginFlow-UsingClientLibrary.png
    :align: center
 
-Using Rest API
+**Using Rest API**
 
 .. image:: ../../../../_static/SPAAppLoginFlow-REST-API.png
 

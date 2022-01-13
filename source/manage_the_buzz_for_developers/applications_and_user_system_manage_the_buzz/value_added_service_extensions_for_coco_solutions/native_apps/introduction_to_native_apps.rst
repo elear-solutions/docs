@@ -9,9 +9,6 @@ application client code.
 These are Native applications which cannot store secrets
 and uses the OAuth 2.0 Authorization Code grant with PKCE flow.
 
-Flow
-----
-
 .. image:: ../../../../_static/NativeAppLoginFlow.png
 
 .. sectionauthor:: Narendra

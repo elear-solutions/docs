@@ -10,8 +10,6 @@ They are used in the following scenarios:
 1. Where you are providing your own user management system and bypass the COCO User management system
 2. Where you are developing an application or integration that does not require authorization from a specific COCO user.
 
-Flow
-++++
 .. image:: ../../../_static/serviceAppFlow.png
 
 .. sectionauthor:: Narendra

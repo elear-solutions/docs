@@ -35,13 +35,14 @@ response_type  OAuth 2.0 endpoint returns an authorization code or token. Set it
    
    We have created a client library for simplifying developers work.
    Include https://static-assets.getcoco.buzz/scripts/sdk.min.js in your application.
+
 1. Use Coco.init() to initialize application.
 2. Use Coco.login() to initiate login with COCO
 3. Use Coco.api() to access COCO APIs as the management of the access tokens are taken care by the above library
 4. Use Coco.logout() to clear the tokens managed by the library, when the user logs out of the application
 
 
-.. code:: javascript
+.. code:: JavaScript
 
     // include sdk in Application
     <script src="https://static-assets.getcoco.buzz/scripts/sdk.min.js"></script>

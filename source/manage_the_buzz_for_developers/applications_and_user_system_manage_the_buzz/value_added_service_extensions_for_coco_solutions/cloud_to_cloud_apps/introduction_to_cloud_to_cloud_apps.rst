@@ -13,9 +13,6 @@ where the COCO user authorizes the application to access
 his/her COCONets to the Application. Example include the
 Integration of COCO Home with Google/Alexa Home.
 
-Flow
-++++
-
 .. image:: ../../../../_static/C2CAppLoginFlow.png
 
 .. sectionauthor:: Narendra
