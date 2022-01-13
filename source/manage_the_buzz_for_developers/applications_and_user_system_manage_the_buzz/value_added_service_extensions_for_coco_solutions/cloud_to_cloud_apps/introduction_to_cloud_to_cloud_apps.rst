@@ -4,7 +4,7 @@ Introduction
 ============
 
 These are Web server based applications which can
-store secrets and use the Oauth Authorization Code grant
+store secrets and use the OAuth 2.0 Authorization Code grant
 flow. A properly authorized web server application can access
 an API while the user interacts with the application and continue
 to work even after the user has left the application.

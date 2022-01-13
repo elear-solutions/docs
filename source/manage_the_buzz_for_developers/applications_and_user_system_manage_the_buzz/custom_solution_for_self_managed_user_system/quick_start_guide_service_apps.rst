@@ -24,13 +24,13 @@ Params         Description
 =============  ==================================================================================
 client_id      Client Id of your application, you can find this value in application details.
 client_secret  Client secret of your application, you can find this value in application details.    
-grant_type     Oauth2.0 grant type. Set it to ``client_credentials``
+grant_type     OAuth2.0 grant type. Set it to ``client_credentials``
 =============  ==================================================================================
 
 
 .. note:: 
    An example service app, where third party users are managed by COCO system to keep track of respective COCONets is available at https://github.com/elear-solutions/nodesampletokenserver.git
 
-   Service app can control all the actions on the COCONets.
+   Service apps have access to all API's of COCO including managing COCONets.
 
 .. sectionauthor:: Narendra

@@ -34,14 +34,17 @@ response_type  OAuth 2.0 endpoint returns an authorization code or token. Set it
    **Using Client Library**
    
    We have created a client library for simplifying developers work.
-   Include https://static-assets.getcoco.buzz/scripts/sdk.min.js in your index.html.
-1. Use Coco.init() and Coco.login() to initiate login with COCO
-2. Use Coco.api() to access COCO APIs as the management of the access tokens are taken care by the above library
-3. Use Coco.logout() to clear the tokens managed by the library, when the user logs out of the application
+   Include https://static-assets.getcoco.buzz/scripts/sdk.min.js in your application.
+1. Use Coco.init() to initialize application.
+2. Use Coco.login() to initiate login with COCO
+3. Use Coco.api() to access COCO APIs as the management of the access tokens are taken care by the above library
+4. Use Coco.logout() to clear the tokens managed by the library, when the user logs out of the application
 
 
 .. code:: javascript
 
+    // include sdk in Application
+    <script src="https://static-assets.getcoco.buzz/scripts/sdk.min.js"></script>
 
     // init application
     Coco.init({
@@ -49,13 +52,13 @@ response_type  OAuth 2.0 endpoint returns an authorization code or token. Set it
         redirect_uri: "http://localhost8000", // optional
         accessTokenExpiringNotificationTime: 300, // optional
       }).then(() => { 
-        console.log('Coco init API completed.');
+        // Other initializations
       }).catch((err) => {
-        console.log('Error Occurred');
+        // Error handling
       });
 
     // login
-    Coco.login()
+    Coco.login() // returns promise
 
     // access COCO APIs
     Coco.api({
@@ -67,18 +70,14 @@ response_type  OAuth 2.0 endpoint returns an authorization code or token. Set it
       "responseType": "json",
     }).then(
       data => {
-        return data;
+        // handle data
       },
       error => {
-        if (error.response) {
-          var err = error.response['error']['message'];
-          console.log('Error Occurred, err);
-        }
-        return error;
+        // error handling
     });
 
     // logout
-    Coco.logout()
+    Coco.logout() // returns promise
 
 
 .. tip::
@@ -92,16 +91,15 @@ End User Flow
 1. User logs in with COCO using his credentials
 2. Authorization page is displayed with the list of app capabilities for the end user to authorize
 
-.. image:: ../../../../_static/authorize.png
+.. image:: ../../../../_static/authorizeSPA.png
 
-3. Once the User successfully authorizes, the application will be receiving the users access/refresh tokens to access
+3. Once the User successfully authorizes, the application will be receiving the users access tokens to access
    the end users COCO Account and access the users COCONets and control/query the resources of the COCONets.
 
 
 .. note:: 
 
-   SPA apps can only control existing resources on COCONets.
-   Example: It can only execute/read the resource information on COCONet.
+   SPA apps can only control existing resources on COCONets.It can only execute/read the resource information on COCONet.
 
 
 .. sectionauthor:: Narendra
