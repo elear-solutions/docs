@@ -29,8 +29,9 @@ Setup on server for custom login
    address of the machine running token server along with the port of
    the sample server
 
-##Running the app - Replace the client id and client Secret present in
-COCOInitialization.swift with your client id and client Secret - Run the
+Running the app
+---------------
+Replace the client id and client Secret present in COCOInitialization.swift with your client id and client Secret - Run the
 app
 
 ##setup for other iOS apps - Copy CocoClientSDK.xcframework and paste it
