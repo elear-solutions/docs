@@ -37,27 +37,23 @@ app
 ##setup for other iOS apps - Copy CocoClientSDK.xcframework and paste it
 in the app folder - Add CocoClientSDK.xcframework in “Frameworks,
 Libraries and Embedded Content” as “Embed & Sign” - Init CocoClient
-\```swift func cocoInit() { do { try CocoClient.setup(cwdPath:
-<#T##String#>, /// Current working directory for app appScope:
-<#T##String#>, /// specify the app capability access list in json format
-like: “{"appCapabilities": [Specify the capability number list]”
-clientId: <#T##String#>, /// Specify the client id downloadPath:
-<#T##String#>, /// Specify the download path oauthDelegate:
-<#T##OAuthDelegate#>, /// Specify the object of class in which
-implemented OAuthDelegate cocoCallbackDelegate:
-<#T##CocoCallbackDelegate#>, /// Specify the object of class in which
-implemented CocoCallbackDelegate connectivityTimers:
-<#T##ConnectivityTimers?#>, /// Object of class ConnectivityTimers used
-to initialize connectivity timers creator: <#T##Creator?#>) /// Specify
-the object of new creator
+   .. code:: swift
+    func cocoInit() { 
+		do { 
+			try CocoClient.setup(cwdPath: <#T##String#>, /// Current working directory for app 
+								 appScope: <#T##String#>, /// specify the app capability access list in json format
+								 like: “{"appCapabilities": [Specify the capability number list]”
+								 clientId: <#T##String#>, /// Specify the client id 
+								 downloadPath: <#T##String#>, /// Specify the download path 
+								 oauthDelegate: <#T##OAuthDelegate#>, /// Specify the object of class in which implemented OAuthDelegate 
+								 cocoCallbackDelegate: <#T##CocoCallbackDelegate#>, /// Specify the object of class in which implemented CocoCallbackDelegate 
+								 connectivityTimers: <#T##ConnectivityTimers?#>, /// Object of class ConnectivityTimers used to initialize connectivity timers 
+								 creator: <#T##Creator?#>) /// Specify the object of new creator
 
-::
-
-   } catch {
-     //TODO 
-   }
-
-} \``\`
+   		} catch {
+     		//TODO 
+   		}
+	} \``\`
 
 -  Call CocoClient.getAccesstoken(handler:) function if token is set
    then it will return the token oherwise it will return the
