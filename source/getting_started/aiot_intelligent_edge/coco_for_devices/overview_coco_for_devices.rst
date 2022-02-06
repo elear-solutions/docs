@@ -5,7 +5,7 @@
 Overview
 ========
 
-The COCO Device SDK provides an API that allows An OEM/Device Application to join a COCONet, publish its Resource Definitions, service Commands or Information Requests from Client Applications, or publish Attributes to Client Applications. For e.g. our COCO Cameras run the Camera Application within their firmware which uses the COCO Device SDK to provide Live Streaming, Event-Driven or On-Demand Video Recording and Pan-Tilt for the Camera, among others.
+The COCO Device SDK provides an API that allows an OEM/Device Application to join a COCONet, publish its Resource Definitions, service Commands or Information Requests from Client Applications, or publish Attributes to Client Applications. For e.g. our COCO Cameras run the Camera Application within their firmware which uses the COCO Device SDK to provide Live Streaming, Event-Driven or On-Demand Video Recording and Pan-Tilt for the Camera, among others.
 
 The following COCO Device SDK's support the development of OEM/Device Applications:
 

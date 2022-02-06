@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _ios_end_user_client_applications:
 
 iOS
 ===
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-.. 
-   <Introduction to this sub-section>
+This section introduces you to the COCO Swift SDK for iOS, a flavour of the COCO Client SDK delivered as a Swift Framework (library) which enables the development of Mobile Apps for iOS phones or tablets, which serve as End-User Client Applications for controlling or receiving data from COCO Resources.
 
 .. toctree::
    :maxdepth: 5
