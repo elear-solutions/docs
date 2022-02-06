@@ -1,18 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _ecosystem_bridge_applications:
 
 Ecosystem Bridge Applications
 =============================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
-   <Suggestions from Ashish - Supports native SDKs on multiple platforms: Android, iOS, Linux, MacOS, Browser and multiple languages: Java, Swift, C, Javascript. Including Native Command, Control and Alert Apps, Bridge Apps, Analytics SPA UI Apps, and Headless AI/ML server applications>
+In this section, we introduce the COCO REST API which enables the development of Ecosystem Bridge Applications, to connect the COCO system to external systems like the Tuya Cloud platform.
 
 .. toctree::
    :maxdepth: 5

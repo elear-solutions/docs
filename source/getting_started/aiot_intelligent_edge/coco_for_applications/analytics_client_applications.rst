@@ -5,7 +5,7 @@
 Analytics Client Applications
 =============================
 
-In this section, we introduce the COCO JavaScript Analytics SDK which enables the development of Browser-based Web Apps for presenting time-range summarized data based on COCO Resource Attribute data aggregated in the COCO Cloud.
+In this section, we introduce the COCO Analytics SDK which enables the development of Client Applications presenting summarized data from COCO Resources.
 
 .. toctree::
    :maxdepth: 5

@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _linux_c_headless_client_applications:
 
 Linux (C)
 =========
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+This section introduces you to the COCO Client SDK, a C library for the Linux operating system, which enables the development of Headless Client Applications, which can run on Linux servers and perform back-end system functions, such as deriving inferences using Machine Learning algorithms.
 
 .. toctree::
    :maxdepth: 5
