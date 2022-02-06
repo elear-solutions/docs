@@ -17,7 +17,7 @@ You can now begin on documentation and following the [build steps](#build-steps)
 
 ## Virtual Environment
 
-If python virtual environment is **not** created for your local docs directory start with [Installation](#installation) steps for Ubuntu, else you can activate the virtual environment using [Activation]() steps.
+If python virtual environment is **not** created for your local docs directory start with [Installation](#installation) steps for Ubuntu, else you can activate the virtual environment using [Activation and Deactivation](#activation-and-deactivation) steps.
 
 ### Installation
 
@@ -35,19 +35,25 @@ If python virtual environment is **not** created for your local docs directory s
 > pip3 install -r requirements.txt
 ```
 
-### Activation
+### Activation and Deactivation
 
 To activate the virtual environment created in your repo follow the below step. **Ignore** if already activated.
 
 ```console
 > source venv/bin/activate
+
+> # Exit/Deactivate the entered virtual environment run 
+> deactivate
 ```
 
-We can now begin on documentation and following the [build steps](#build-steps) guide.
+Once venv is activated you can begin on documentation and following the [build steps](#build-steps) guide.
 
 ## Build Steps
 ```console
-> # This command warns for spellings and broken links while just generating html pages.
+> # To clean the generated html files, inside venv run
+> make clean
+
+> # To generate html pages and warn for spellings and broken links
 > make html -b spelling -b linkcheck
 ```
 
@@ -58,17 +64,11 @@ If there are any **false positives** in spellings, they can be added to [Spellin
 
 ---
 
+### Live Preview
+
 ```console
 > # To generate html pages from rst files and present them in the browser as we make changes use
 > sphinx-autobuild ./source/ ./build/html/ --port 8000 --host 0.0.0.0
 ```
 
 From now any updates to files will be reflected on local host in real time. Open the url - http://127.0.0.1:8000 in your browser.
-
-```console
-> # To clean the build folder, inside venv run
-> make clean
-
-> # Exit/Deactivate the entered virtual environment run 
-> deactivate
-```
