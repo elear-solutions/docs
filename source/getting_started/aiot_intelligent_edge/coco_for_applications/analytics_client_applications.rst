@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _analytics_client_applications:
 
 Analytics Client Applications
 =============================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce the COCO JavaScript Analytics SDK which enables the development of Browser-based Web Apps for presenting time-range summarized data based on COCO Resource Attribute data aggregated in the COCO Cloud.
 
 .. toctree::
    :maxdepth: 5

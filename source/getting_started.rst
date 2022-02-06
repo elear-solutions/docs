@@ -1,17 +1,10 @@
+.. sectionauthor:: Manav
+
 .. _getting_started:
 
 Getting Started
 ===============
-
-.. figure:: _static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this section>
+Get started quickly with our solutions in this section. We introduce you to our AIoT platform built for IoT appliances, sensors and IoT Next use cases; as well as our Media platform built for use cases like Watch Together; and show you how to get a jump start on using these solutions.
 
 .. toctree::
    :maxdepth: 5
