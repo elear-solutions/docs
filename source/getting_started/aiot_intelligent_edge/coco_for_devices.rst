@@ -5,7 +5,7 @@
 COCO For Devices
 ================
 
-In this section, we introduce the COCO Device SDK, a library for developing OEM or Virtual Device Applications.
+In this section, we introduce the COCO Device SDK - a library for developing OEM or Virtual Device Applications.
 
 .. toctree::
    :maxdepth: 5

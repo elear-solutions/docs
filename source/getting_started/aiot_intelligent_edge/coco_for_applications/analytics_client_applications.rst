@@ -1,18 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _analytics_client_applications:
 
 Analytics Client Applications
 =============================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
-   <Suggestions from Ashish - Supports native SDKs on multiple platforms: Android, iOS, Linux, MacOS, Browser and multiple languages: Java, Swift, C, Javascript. Including Native Command, Control and Alert Apps, Bridge Apps, Analytics SPA UI Apps, and Headless AI/ML server applications>
+In this section, we introduce the COCO JavaScript Analytics SDK which enables the development of Browser-based Web Apps for presenting time-range summarized data based on COCO Resource Attribute data aggregated in the COCO Cloud.
 
 .. toctree::
    :maxdepth: 5
