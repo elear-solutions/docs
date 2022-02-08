@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _ota_updates:
 
 OTA Updates
@@ -7,5 +9,3 @@ OTA Updates
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

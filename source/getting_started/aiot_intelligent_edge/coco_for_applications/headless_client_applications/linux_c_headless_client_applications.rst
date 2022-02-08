@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _linux_c_headless_client_applications:
 
 Linux (C)
@@ -7,8 +9,6 @@ Linux (C)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

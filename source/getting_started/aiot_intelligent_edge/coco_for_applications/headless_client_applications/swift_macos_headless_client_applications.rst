@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _swift_macos_headless_client_applications copy:
 
 Swift (MacOS)
@@ -7,8 +9,6 @@ Swift (MacOS)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

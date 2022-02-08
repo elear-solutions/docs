@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _sample_app_walkthrough_android_media_client_apps:
 
 Sample App Walkthrough
@@ -7,5 +9,3 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna

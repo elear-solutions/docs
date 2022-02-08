@@ -1,11 +1,11 @@
+.. sectionauthor:: Shrinivas
+
 .. _quick_start_guide_ios_end_user_client_apps:
 
 Quick Start Guide
 =================
 
-.. section author:: Shrinivas
-
-This guide provides a quick understanding of API with example code snippets to get started. 
+This guide provides a quick understanding of API with example code snippets to get started.
 
 .. contents::
   :local:

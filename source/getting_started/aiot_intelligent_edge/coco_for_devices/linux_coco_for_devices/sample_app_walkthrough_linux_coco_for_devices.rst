@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _sample_app_walkthrough_linux_coco_for_devices:
 
 Sample App Walkthrough
@@ -7,5 +9,3 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav

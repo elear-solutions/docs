@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _sample_app_walkthrough_linux_c_headless_client_apps:
 
 Sample App Walkthrough
@@ -7,5 +9,3 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav

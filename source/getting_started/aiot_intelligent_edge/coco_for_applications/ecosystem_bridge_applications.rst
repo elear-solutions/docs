@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _ecosystem_bridge_applications:
 
 Ecosystem Bridge Applications
@@ -7,8 +9,6 @@ Ecosystem Bridge Applications
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

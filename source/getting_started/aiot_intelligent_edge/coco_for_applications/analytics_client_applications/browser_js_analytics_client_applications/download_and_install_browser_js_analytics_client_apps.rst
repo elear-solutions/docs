@@ -1,3 +1,5 @@
+.. sectionauthor:: Deekshith
+
 .. _download_and_install_browser_js_analytics_client_apps:
 
 Download And Install
@@ -7,5 +9,3 @@ Download And Install
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Deekshith

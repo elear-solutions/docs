@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _analytics_client_applications:
 
 Analytics Client Applications
@@ -7,8 +9,6 @@ Analytics Client Applications
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>
