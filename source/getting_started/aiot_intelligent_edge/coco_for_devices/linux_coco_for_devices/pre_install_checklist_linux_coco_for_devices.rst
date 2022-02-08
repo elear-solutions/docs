@@ -2,10 +2,5 @@
 
 Pre-Install Checklist
 =====================
-
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Theja
+1. Ubuntu to run the app 
+2. gcc to compile it.

@@ -2,10 +2,6 @@
 
 API Reference Documentation
 ===========================
+COCO Device SDK API Documentation:
+`<https://docs.getcoco.buzz/iot-sdk/c-api-for-devices/index.html>`__
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Theja
