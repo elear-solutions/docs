@@ -5,82 +5,332 @@
 Sample App Walkthrough
 ======================
 
-.. sectionauthor:: Krishna
+This guide provides a quick walkthrough of API with example code snippets to get started. 
 
-The IoTSample app demonstrates the ability of the **COCO IoT SDK** in monitoring *temperature* and transmiting *ON/OFF* switching commands.
+.. contents::
+  :local:
 
-This tutorial will walk you through the process of setting up our example app and experience how we integrated the **COCO IoT SDK**.
 
-Step1: Clone Sample App Repo
-   - Visit `SampleApp Repo`_ on official `Elear Solutions`_ organization account, you can either clone using
+Configuring CocoClient
+----------------------
 
-     .. code-block:: bash
+The base SDK Class that developer will call. CocoClient class follows the singleton design pattern so the configuration goes as follows:
+
+   .. code-block:: java
+   
+        public class SplashActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+          if (null != CocoClient.getInstance()) {
+            return;
+          }
+   
+          new CocoClient.Configurator()
+              .withCreator(new CreatorEx())
+              .withPlatform(new PlatformInterface() {
+                @Override
+                public String getCwdPath() {
+                  return "provide_current_working_directory";
+                }
+   
+                @Override
+                public String getClientId() {
+                  return "your_client_id_here";
+                }
+   
+                @Override
+                public String getAppAccessList() {
+                  // JSON that describes SDK the capabilities your app will deal
+                  return "{\"appCapabilities\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}";
+                }
+   
+                @Override
+                public void authCallback(String authorizationEndpoint, String tokenEndpoint) {
+                  // override this callback to perform authentication, This is triggered by SDK when tokens are expired
+                }
+              }).configure();
+        }
+      }
+
+.. important:: 
+
+   ``.withCreator(new CreatorEx())`` is essential as it creates Android
+   flavoured instances of NetworkEx, DeviceEx, ResourceEx, AttributeEx, etc. 
+
+   | Above Ex suffixed classes are sub classes of Java flavoured Network, Device, Resource, Attribute respectively.
+
+----
+
+Authentication
+--------------
+
+1. | To login COCO users with their accounts we offer **CocoLoginMgr** a wrapper around **AppAuth-Android** to authenticate users and access their COCO account.
+   | The code snippet below achieves Login with COCO using simple result launcher:
+
+   .. code-block:: java
+       :emphasize-lines: 23
+
+        public class MainActivity extends AppCompatActivity {
+          private final ActivityResultLauncher<Intent> resultLauncher =
+              registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+                Intent dataIntent = result.getData();
+        
+                if (RESULT_OK != result.getResultCode()) {
+                  // process failure
+                  return;
+                }
+        
+                if (dataIntent.hasExtra(Constants.KEY_AUTH_STATE)) {
+                  String tokens = dataIntent.getStringExtra(Constants.KEY_AUTH_STATE);
+                  // pass tokens to sdk and start making api calls
+                }
+              });
   
-         git clone git@github.com:elear-solutions/cococlientsdk-java-iot-sample-app.git 
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            Intent loginIntent = new Intent(this, LoginActivity.class)
+                .putExtra(Constants.AUTH_ENDPOINT, authEndpoint)
+                .putExtra(Constants.TOKEN_ENDPOINT, tokenEndpoint);
+        
+            resultLauncher.launch(loginIntent);
+          }
+        }
 
-    or `download source code <https://github.com/elear-solutions/cococlientsdk-java-iot-sample-app/archive/refs/heads/main.zip>`__.
+.. admonition:: Info
 
-   - After unpacking the downloaded ZIP or cloning the repo we are good to
-     start with Android Studio.
+    If you are a Third-party-App with its own user base we also have a solution for authentication. Visit :ref:`self managed user system <custom_solution_for_self_managed_user_system>` section.
 
+2. Tokens must be set after a successful login and receipt of tokens.
+   Once the tokens are set, the SDK will manage token expiration by
+   invoking ``authCallback``; the token setter is shown below:
 
-Step2: Verify Dependencies
-   -  Now that you have cloned/downloaded the code, import the project to Android Studio.
-
-   -  Verify that the **IoT SDK Android** and **Java** dependencies are included:
-
-   .. code-block:: groovy
-      :caption: **app/build.gradle**
+   .. code-block:: java
+       :emphasize-lines: 4
    
-        implementation 'buzz.getcoco:cococlientsdk-android:0.8.0'
-        implementation 'buzz.getcoco:cococlientsdk-java:0.21.0-lite'
+       public class SplashActivity extends AppCompatActivity {
+         @Override
+         protected void onCreate(Bundle savedInstanceState) {
+           CocoClient.getInstance().setTokens(tokens);
+         }
+       }
 
-Step3: Enter ClientID and Redirect URI
-   -  Enter your **ClientID** that you generated during pre-install steps.
-   
-   .. code-block:: xml
-       :caption: **app/src/main/AndroidManifest.xml**
-       :emphasize-lines: 3
-   
-          <meta-data
-            android:name="buzz.getcoco.auth.client_id"
-            android:value="your_client_id_here"/>
-   
-   -  In order to capture OAuth enter your **Redirect URI** in ``<activity>`` element that you generated during pre-install steps.
-   
-   .. code-block:: xml
-       :caption: **app/src/main/AndroidManifest.xml**
-       :emphasize-lines: 8
-   
-          <activity
-            android:name="buzz.getcoco.auth.CocoRedirectActivity"
-            android:exported="true">
-            <intent-filter>
-              <action android:name="android.intent.action.VIEW"/>
-              <category android:name="android.intent.category.DEFAULT"/>
-              <category android:name="android.intent.category.BROWSABLE"/>
-              <data android:scheme="your_redirect_scheme_here"/>
-            </intent-filter>
-          </activity>
+3. Access tokens if set can be queried from SDK using:
 
--  Its time to launch the app, connect your Android device to your PC
-   and click **Run** on Android Studio toolbar.
-
-Step4: Navigating Through Sample App
-   Sample app comprises of 3 steps/screens:
+   .. code-block:: java
+       :emphasize-lines: 4
    
-   :menuselection:`Login with COCO --> Connect to CocoNets in your account --> View Resources in your CocoNet`
-   
-   - Login with COCO
-      This screen demonstrates the primary COCO user login following OAuth 2.0 protocol.
-   
-   - Connect to CocoNets
-      This screen demonstrates how to fetch all the Networks of a CocoClient and connect to one.
-   
-   - View Resources
-      This screen shows how to obtain Resources from all Zones, send *ON/OFF* commands, and display realtime *current temperature* Attribute changes.
+       public class SplashActivity extends AppCompatActivity {
+         @Override
+         protected void onCreate(Bundle savedInstanceState) {
+           CocoClient.getInstance().getAccessTokens((accessToken, tr) -> {
+             if (null != accessToken) {
+               startCocoNetActivity();
+               return;
+             }
+    
+             // perform login
+           });
+         }
+       }
 
+----
 
-.. _SampleApp Repo: https://github.com/elear-solutions/cococlientsdk-java-iot-sample-app
+Working with Network
+--------------------
 
-.. _Elear Solutions: https://github.com/elear-solutions
+Now that the SDK has been established and the tokens have been set, we
+can inspect API requests on the Network(or COCONet).
+
+1. Connecting/Disconnecting to a Network is as simple as calling
+   ``network.connect()`` and ``network.disconnect()`` on the instance of
+   a Network under consideration.
+
+2. Fetching all Networks of a CocoClient can be achieved by:
+
+   .. code-block:: java
+       :emphasize-lines: 6
+
+        public class CocoNetworksActivity extends AppCompatActivity {
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            CocoClient
+                .getInstance()
+                .getAllNetworks((networkList, throwable) -> {
+                   if (null != throwable) {
+                     return;
+                   }
+
+                   recyclerViewAdapter.setList(networkList);
+                 });
+          }
+        }
+
+3. Network connection status updates can be listened using, some possible values are ``CONNECTED``, ``CONNECTING``, ``DISCONNECTED`` etc:
+
+   .. code-block:: java
+       :emphasize-lines: 4
+   
+        public class MainActivity extends AppCompatActivity {
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            network.getStateObservable().observe(this, state -> {
+               String message = "Name: " + network.getName() + ", state: " + state;
+     
+               // show a toast 
+               Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+             });
+          }
+        }
+
+4. Network comprises of Zones and Devices. You can get the list of all Zones or Devices in a Network using a getter on Network instance as follows:
+
+   .. code-block:: java
+       :emphasize-lines: 8,12
+
+       public class MainActivity extends AppCompatActivity {
+         @Override
+         protected void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState);
+           
+           NetworkEx network = CocoClient.getInstance().getNetwork(networkId);
+           
+           network.getZoneListObservable().observe(this, zoneList -> {
+             // code to handle list of zones in a network goes here
+           });
+           
+           network.getDeviceListObservable().observe(this, deviceList -> {
+             // code to handle list of devices in a network goes here
+           });
+         }
+       }
+
+----
+
+Working with Device
+-------------------
+A Device is node in a Network representing either a physical device (such as a Gateway, Camera or Light Bulb) or a software gateway, and is built using the COCO Device SDK.
+
+1. Observing device *ready* state (as it publishes resource definitions and attribute updates to client application) is as straight forward as:
+
+   .. code-block:: java
+       :emphasize-lines: 7
+
+        public class MainActivity extends AppCompatActivity {
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+
+            DeviceEx device = network.getDevice(deviceNodeId)
+            device.getDeviceStateObservable().observe(this, ready -> {
+              // handle the ready boolean
+            });
+          }
+        }
+
+2. Using a Device object we can add a Resource in its parent Network.
+   The Device class provides functions to add Resources that communicate using Zigbee, ZWave, BLE, Thread etc. 
+
+   .. code-block:: java
+       :emphasize-lines: 6
+
+        public class MainActivity extends AppCompatActivity {
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+        
+            network.getDevice(deviceNodeId).addZwaveResource(metadata, parameters, timeout, new Device.AddResourceListener() {
+              @Override
+              public void onStatusChanged(CommandResponse<Device.CommandId> response, Resource[] resourcesImpacted, Throwable tr) { 
+              }
+        
+              @Override
+              public void onInfoRequest(InfoRequest infoRequest) {
+              }
+        
+              @Override
+              public void onMessage(String title, String message, MessageType messageType) {
+              }
+            });
+          }
+        }
+
+----
+
+Send Commands
+-------------
+
+1. Lets assume we have a Refrigeration unit resource with *OnOff* and *Temperature Sensing* Capability as some of its many capabilities.
+
+2. This implies we can switch the resource *On* or *Off* and also monitor the *Temperature*.
+
+3. The following basic snippet creates an *On* command for a resource with *CapabilityOnOff*:
+
+    .. code-block:: java
+        :emphasize-lines: 4
+    
+        public class MainActivity extends AppCompatActivity {
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            Command<CapabilityOnOff.CommandId> command =  new CapabilityOnOff.On();
+          }
+        }
+
+4. The code below illustrates how to send an *On* command to the resource
+   using ``Capability.sendResourceCommand(Command command)`` API:
+
+   .. code-block:: java
+       :emphasize-lines: 11
+   
+        public class MainActivity extends AppCompatActivity {
+          @Override
+          protected void onCreate(Bundle savedInstanceState) {
+            CapabilityOnOff capabilityOnOff = resource.getCapability(Capability.CapabilityId.ON_OFF_CONTROL);
+     
+            if (null == capabilityOnOff) {
+              return;
+            }
+     
+            // API call with listener for command response registered
+            capabilityOnOff.sendResourceCommand(new CapabilityOnOff.On(), (commandResponse, tr) -> {
+              if (null != tr) {
+                // do something using throwable error
+                return;
+              }
+     
+              String message = (Command.State.SUCCESS == commandResponse.getState()) ? "Command Success" : "Command Failed";
+              // handle command state and response
+            });  
+          }
+        }
+
+----
+
+Attribute Updates
+-----------------
+
+1. We can also monitor temperature of Refrigeration unit resource as
+   Temperature Sensing is one of its many Capabilities.
+
+2. As CapabilityTemperatureSensing provides *CURRENT_TEMPERATRE_CELSIUS*
+   attribute we can observe the live updates to the attribute using few
+   lines of code as shown below:
+
+   .. code-block:: java
+       :emphasize-lines: 6
+
+        public class MainActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+          AttributeEx temperatureAttr = resource.getAttribute(CapabilityTemperatureSensing.AttributeId.CURRENT_TEMP_CELSIUS);
+
+          temperatureAttr.getCurrentValueObservable().observe(lifecycleOwner, currentTemperature -> {
+            if (currentTemperature instanceof Double) {
+              // bind the currentTemperatureto the UI
+            }
+          });
+        }
+
+.. tip::
+
+   To understand more about Capabilities, Supported Attributes, Protocols and data
+   types of Attributes please refer :ref:`COCO Standard <coco_standard>`.

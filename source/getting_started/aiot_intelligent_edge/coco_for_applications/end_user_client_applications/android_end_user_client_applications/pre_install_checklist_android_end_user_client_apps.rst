@@ -5,9 +5,7 @@
 Pre-Install Checklist
 =====================
 
-.. sectionauthor:: Krishna
-
-The following are necessary to try out the **IoT SDK Android** and **Sample App**:
+The following are necessary to try out the **COCO IoT SDK Android** and **IoT Sample App**:
 
 Git
     - To clone the Sample App repo from Github.
@@ -18,10 +16,10 @@ Android Studio
     - `Android Studio Installation <https://developer.android.com/studio/install>`_
 
 Generating Client ID and Redirect URI
-    - If not using third-party login, the Client ID and Redirect URI are essential for a developer to handle authentication of his user.
-    - The steps for generation are found in :ref:`Manage the Buzz <native_apps>`.
+    - The IoT example app shows a login solution for developers to get apps authorized by a COCO user and build value-added service extensions for the COCO platform.
+    - Therefore *Client ID* and *Redirect URI* are essential for a developer to handle authentication of his user. The steps for generation are found in :ref:`Manage the Buzz <native_apps>` section.
 
 Setup Device App
-    - Device app is a gateway that comes with a **Network** which contains a **Resource** for demo purpose.
-    - Currently the Resource provided has 2 capabilities named **CapabilityOnOff** and **CapabilityTemperatureSensing**.
-    - Visit :ref:`COCO for Devices <linux_coco_for_devices>` to compile and run the sample device app provided.
+    - Device app is a software gateway that simulates a COCO Device and is built using COCO platform's Device SDK.
+    - This Sample App will work either with the aforementioned **Device App**, or with Zigbee or Z-Wave **Light Bulbs** or **Temperature Sensors**.
+    - Visit :ref:`COCO for Devices <linux_coco_for_devices>` for steps to compile, run and add the sample device app to your COCONet.
