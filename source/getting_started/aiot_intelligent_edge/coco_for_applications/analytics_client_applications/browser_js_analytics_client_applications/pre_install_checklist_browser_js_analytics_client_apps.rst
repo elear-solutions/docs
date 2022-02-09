@@ -1,3 +1,5 @@
+.. sectionauthor:: Deekshith
+
 .. _pre_install_checklist_browser_js_analytics_client_apps:
 
 Pre-Install Checklist
@@ -7,5 +9,3 @@ Pre-Install Checklist
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Deekshith

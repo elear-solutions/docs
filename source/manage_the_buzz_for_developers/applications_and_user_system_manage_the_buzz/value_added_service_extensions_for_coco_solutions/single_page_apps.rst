@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _single_page_apps:
 
 Single-Page Apps (SPA)
@@ -7,8 +9,6 @@ Single-Page Apps (SPA)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra
 
 ..
    <Introduction to this sub-section>

@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _aiot_intelligent_edge:
 
 AIoT Intelligent Edge
@@ -7,8 +9,6 @@ AIoT Intelligent Edge
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

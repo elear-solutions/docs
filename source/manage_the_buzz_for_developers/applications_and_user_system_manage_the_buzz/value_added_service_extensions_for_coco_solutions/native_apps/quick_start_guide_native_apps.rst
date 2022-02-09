@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _quick_start_guide_native_apps:
 
 Quick Start Guide
@@ -7,5 +9,3 @@ Quick Start Guide
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _introduction_to_native_apps:
 
 Introduction
@@ -7,5 +9,3 @@ Introduction
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

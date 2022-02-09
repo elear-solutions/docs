@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _headless_client_applications:
 
 Headless Client Applications
@@ -7,8 +9,6 @@ Headless Client Applications
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

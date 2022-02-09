@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _terminology_aiot:
 
 Terminology
@@ -7,8 +9,6 @@ Terminology
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
     <Suggestions from Ashish - cover how we represent the real world into our software Devices > Resources > Capabilities > Commands & Attributes. Cover Network Data items>

@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _getting_started:
 
 Getting Started
@@ -7,8 +9,6 @@ Getting Started
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this section>

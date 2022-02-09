@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _community_projects_ideas_swift_macos_headless_client_apps:
 
 Community Projects and Use Case Ideas
@@ -7,8 +9,6 @@ Community Projects and Use Case Ideas
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish
 
 ..
     <Suggestions from Ashish - Energy Optimizer Assistant, etc.>

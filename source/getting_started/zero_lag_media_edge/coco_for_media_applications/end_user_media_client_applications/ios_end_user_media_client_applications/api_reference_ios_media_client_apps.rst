@@ -1,3 +1,5 @@
+.. sectionauthor:: Rohan
+
 .. _api_reference_ios_media_client_apps:
 
 API Reference Documentation
@@ -7,5 +9,3 @@ API Reference Documentation
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Rohan

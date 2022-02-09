@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _ios_end_user_media_client_applications:
 
 iOS
@@ -7,8 +9,6 @@ iOS
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

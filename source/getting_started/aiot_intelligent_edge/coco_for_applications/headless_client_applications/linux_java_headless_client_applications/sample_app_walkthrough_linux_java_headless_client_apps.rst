@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _sample_app_walkthrough_linux_java_headless_client_apps:
 
 Sample App Walkthrough
@@ -7,8 +9,6 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna
 
 ..
     <Content here - Owner: Krishna>

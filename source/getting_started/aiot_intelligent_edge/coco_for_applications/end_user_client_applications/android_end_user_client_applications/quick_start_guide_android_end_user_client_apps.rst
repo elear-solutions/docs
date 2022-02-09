@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _quick_start_guide_android_end_user_client_apps:
 
 Quick Start Guide

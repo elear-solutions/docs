@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _introduction:
 
 Introduction
@@ -7,8 +9,6 @@ Introduction
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish
 
 ..
    <Introduction to this section>

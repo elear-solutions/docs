@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _download_and_install_rest_ecosystem_bridge_apps:
 
 Download And Install
@@ -7,5 +9,3 @@ Download And Install
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

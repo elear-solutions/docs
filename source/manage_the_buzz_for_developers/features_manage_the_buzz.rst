@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _features_manage_the_buzz:
 
 Features
@@ -7,5 +9,3 @@ Features
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

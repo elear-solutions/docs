@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _api_reference_android_end_user_client_apps:
 
 API Reference Documentation

@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _what_is_coco:
 
 What is COCO?
@@ -7,5 +9,3 @@ What is COCO?
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish

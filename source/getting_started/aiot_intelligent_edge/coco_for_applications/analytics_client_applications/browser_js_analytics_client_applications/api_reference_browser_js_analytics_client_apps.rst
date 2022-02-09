@@ -1,3 +1,5 @@
+.. sectionauthor:: Deekshith
+
 .. _api_reference_browser_js_analytics_client_apps:
 
 API Reference Documentation
@@ -7,5 +9,3 @@ API Reference Documentation
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Deekshith
