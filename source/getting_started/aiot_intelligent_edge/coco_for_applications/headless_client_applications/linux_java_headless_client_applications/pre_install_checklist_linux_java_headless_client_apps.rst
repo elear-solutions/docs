@@ -5,7 +5,16 @@
 Pre-Install Checklist
 =====================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+To build and run your first **Headless Linux Java App** in a few short steps you will need:
 
-   **Coming Soon**
+Git
+  - To clone the Sample App repo from Github.
+  - `Git Installation <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
+
+Java
+  `Setup <https://www.oracle.com/java/technologies/downloads/#java8>`_ JDK (>= 8.0) to compile and run the app.
+
+.. TODO: add standalone app section link.
+
+Generate Invite
+  Follow the quick start guide for Standalone apps with steps to Generate Invite.
