@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _quick_start_guide_single_page_apps:
 
 Quick Start Guide
@@ -102,5 +104,9 @@ End User Flow
 
    SPA apps can only control existing resources on COCONets.It can only execute/read the resource information on COCONet.
 
+<<<<<<< HEAD
 
 .. sectionauthor:: Narendra
+=======
+   **Coming Soon**
+>>>>>>> feature-akshay-init-2

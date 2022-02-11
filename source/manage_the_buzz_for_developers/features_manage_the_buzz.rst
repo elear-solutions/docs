@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _features_manage_the_buzz:
 
 Features

@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _quick_start_guide_android_media_client_apps:
 
 Quick Start Guide
@@ -7,8 +9,6 @@ Quick Start Guide
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna
 
 ..
     <Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully.>

@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _api_reference_rest_ecosystem_bridge_apps:
 
 API Reference Documentation
@@ -7,5 +9,3 @@ API Reference Documentation
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

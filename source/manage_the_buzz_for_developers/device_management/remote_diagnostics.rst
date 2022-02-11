@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _remote_diagnostics:
 
 Remote Diagnostics
@@ -7,5 +9,3 @@ Remote Diagnostics
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

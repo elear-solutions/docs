@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _android_end_user_client_applications:
 
 Android
@@ -7,8 +9,6 @@ Android
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 .. 
    <Introduction to this sub-section>

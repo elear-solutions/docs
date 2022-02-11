@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _secure_manufacturing:
 
 Secure Manufacturing
@@ -7,5 +9,3 @@ Secure Manufacturing
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish

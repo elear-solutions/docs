@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _rest_ecosystem_bridge_applications:
 
 REST
@@ -7,8 +9,6 @@ REST
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 .. 
    <Introduction to this sub-section>

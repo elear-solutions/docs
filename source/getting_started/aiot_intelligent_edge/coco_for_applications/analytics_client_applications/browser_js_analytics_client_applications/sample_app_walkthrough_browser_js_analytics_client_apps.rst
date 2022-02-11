@@ -1,3 +1,5 @@
+.. sectionauthor:: Deekshith
+
 .. _sample_app_walkthrough_browser_js_analytics_client_apps:
 
 Sample App Walkthrough
@@ -7,5 +9,3 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Deekshith

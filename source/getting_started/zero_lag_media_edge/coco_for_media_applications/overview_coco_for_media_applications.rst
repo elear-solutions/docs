@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _overview_coco_for_media_applications:
 
 Overview
@@ -7,5 +9,3 @@ Overview
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna

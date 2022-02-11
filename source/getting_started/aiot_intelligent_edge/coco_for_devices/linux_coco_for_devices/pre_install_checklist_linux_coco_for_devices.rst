@@ -1,3 +1,5 @@
+.. sectionauthor:: Theja
+
 .. _pre_install_checklist_linux_coco_for_devices:
 
 Pre-Install Checklist
@@ -7,5 +9,3 @@ Pre-Install Checklist
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Theja

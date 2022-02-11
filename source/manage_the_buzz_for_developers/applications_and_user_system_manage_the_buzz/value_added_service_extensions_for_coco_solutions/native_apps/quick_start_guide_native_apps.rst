@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _quick_start_guide_native_apps:
 
 Quick Start Guide

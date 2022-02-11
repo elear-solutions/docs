@@ -1,3 +1,5 @@
+.. sectionauthor:: Rohan
+
 .. _sample_app_walkthrough_swift_macos_headless_client_apps:
 
 Sample App Walkthrough
@@ -7,5 +9,3 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Rohan

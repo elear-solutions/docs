@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _custom_solution_for_self_managed_user_system:
 
 Custom Solution for Self-managed User System

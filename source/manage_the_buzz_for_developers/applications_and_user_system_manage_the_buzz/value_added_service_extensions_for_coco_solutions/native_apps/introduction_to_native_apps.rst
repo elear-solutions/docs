@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _introduction_to_native_apps:
 
 Introduction

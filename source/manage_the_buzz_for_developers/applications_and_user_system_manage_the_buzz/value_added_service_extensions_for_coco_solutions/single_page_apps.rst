@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _single_page_apps:
 
 Single-Page Apps (SPA)
