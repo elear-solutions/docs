@@ -9,14 +9,21 @@ Register Application
 ++++++++++++++++++++
 
 1. Signup for a new COCO account or Sign In if you have one: https://manage.getcoco.buzz/
+
+.. image:: ../../../_static/login.png
+
 2. Click on Applications > (+) Application
+
+.. image:: ../../../_static/createApplication.png
+
 3. Select application type as **Service** and fill in the details
+   For grouping of applications, select existing app group or create a new one.
 
 .. image:: ../../../_static/registerApp.png
 
-4. For grouping of applications, select existing app group or create a new one.
-5. By default all the capabilities are selected and is non editable.
-6. In the app, use the above client credentials with the COCO token API to get access/refresh tokens to access COCO cloud.
+.. image:: ../../../_static/serviceAppDetails.png
+
+5. In the app, use the above client credentials with the COCO token API to get access/refresh tokens to access COCO cloud.
    
    Token endpoint: POST https://api.getcoco.buzz/v1.0/oauth/token and takes the below params.
 

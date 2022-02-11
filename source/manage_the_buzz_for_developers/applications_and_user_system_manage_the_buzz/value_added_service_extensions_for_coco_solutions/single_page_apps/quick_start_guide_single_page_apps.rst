@@ -8,15 +8,19 @@ Register Application
 ++++++++++++++++++++
 
 1. Signup for a new COCO account or Sign In if you have one: https://manage.getcoco.buzz/
+
+.. image:: ../../../../_static/login.png
+
 2. Click on Applications > (+) Application
+
+.. image:: ../../../../_static/createApplication.png
+
 3. Select application type as **Grove Hosted > SPA** and fill in all the details
+   For grouping of applications, select existing app group or create a new one.
    
 .. image:: ../../../../_static/spaApp.png
 
-
-4. For grouping of applications, select existing app group or create a new one.
-5. By default all the capabilities are selected and is non editable.
-6. Use the clientId of application and get the access token in two ways
+4. Use the clientId of application and get the access token in two ways
 
    **Using REST APIs**
 
@@ -104,9 +108,5 @@ End User Flow
 
    SPA apps can only control existing resources on COCONets.It can only execute/read the resource information on COCONet.
 
-<<<<<<< HEAD
 
 .. sectionauthor:: Narendra
-=======
-   **Coming Soon**
->>>>>>> feature-akshay-init-2
