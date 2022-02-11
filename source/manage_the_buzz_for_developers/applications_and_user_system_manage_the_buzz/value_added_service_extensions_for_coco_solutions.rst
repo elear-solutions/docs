@@ -20,3 +20,4 @@ Value-Added Service Extensions for COCO Solutions
    value_added_service_extensions_for_coco_solutions/cloud_to_cloud_apps
    value_added_service_extensions_for_coco_solutions/single_page_apps
    value_added_service_extensions_for_coco_solutions/native_apps
+   value_added_service_extensions_for_coco_solutions/standalone_apps
