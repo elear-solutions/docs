@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _download_and_install_linux_java_headless_client_apps:
 
 Download And Install
@@ -7,5 +9,3 @@ Download And Install
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna

@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _sample_app_walkthrough_rest_ecosystem_bridge_apps:
 
 Sample App Walkthrough
@@ -7,5 +9,3 @@ Sample App Walkthrough
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

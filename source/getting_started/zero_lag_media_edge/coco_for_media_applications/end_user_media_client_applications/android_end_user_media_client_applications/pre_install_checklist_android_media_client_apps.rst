@@ -1,9 +1,9 @@
+.. sectionauthor:: Krishna
+
 .. _pre_install_checklist_android_media_client_apps:
 
 Pre-Install Checklist
 =====================
-
-.. sectionauthor:: Krishna
 
 The following are necessary to tryout the **COCO Media SDK Android** and **COCO Sessions** sample app.
 

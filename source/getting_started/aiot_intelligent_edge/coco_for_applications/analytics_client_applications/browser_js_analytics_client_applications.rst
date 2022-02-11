@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _browser_js_analytics_client_applications:
 
 Browser (JavaScript)
@@ -7,8 +9,6 @@ Browser (JavaScript)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 .. 
    <Introduction to this sub-section>

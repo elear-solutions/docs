@@ -1,9 +1,9 @@
+.. sectionauthor:: Krishna
+
 .. _sample_app_walkthrough_android_media_client_apps:
 
 Sample App Walkthrough
 ======================
-
-.. sectionauthor:: Krishna
 
 **COCO Sessions** sample app illustrates COCO Media SDK Android's ability to communicate in real time via text, audio, and video.
 

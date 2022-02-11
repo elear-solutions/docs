@@ -1,9 +1,9 @@
+.. sectionauthor:: Krishna
+
 .. _quick_start_guide_android_media_client_apps:
 
 Quick Start Guide
 =================
-
-.. sectionauthor:: Krishna
 
 This guide provides a quick understanding of API with example code snippets to get started.
 

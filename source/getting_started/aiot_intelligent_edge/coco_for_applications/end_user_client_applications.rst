@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _end_user_client_applications:
 
 End-User Client Applications
@@ -7,8 +9,6 @@ End-User Client Applications
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _freertos_coco_for_devices:
 
 FreeRTOS (coming soon!)
@@ -7,8 +9,6 @@ FreeRTOS (coming soon!)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
     <Suggestion from Ashish - Coming Soon Placeholder Image>

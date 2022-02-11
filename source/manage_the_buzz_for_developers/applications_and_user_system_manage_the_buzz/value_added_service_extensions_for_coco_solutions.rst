@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _value_added_service_extensions_for_coco_solutions:
 
 Value-Added Service Extensions for COCO Solutions
@@ -7,8 +9,6 @@ Value-Added Service Extensions for COCO Solutions
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra
 
 ..
    <Introduction to this sub-section>

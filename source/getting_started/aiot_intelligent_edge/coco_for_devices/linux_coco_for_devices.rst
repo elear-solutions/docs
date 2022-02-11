@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _linux_coco_for_devices:
 
 Linux
@@ -7,8 +9,6 @@ Linux
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

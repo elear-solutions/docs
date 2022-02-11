@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _coco_for_applications:
 
 COCO For Applications
@@ -7,8 +9,6 @@ COCO For Applications
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

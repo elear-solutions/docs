@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _coco_for_devices:
 
 COCO For Devices
@@ -7,8 +9,6 @@ COCO For Devices
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

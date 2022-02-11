@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _introduction_to_service_apps:
 
 Introduction to Service Apps
@@ -7,5 +9,3 @@ Introduction to Service Apps
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

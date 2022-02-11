@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _overview_manage_the_buzz:
 
 Overview
@@ -7,5 +9,3 @@ Overview
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

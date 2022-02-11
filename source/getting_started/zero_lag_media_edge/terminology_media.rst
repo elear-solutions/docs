@@ -1,12 +1,9 @@
+.. sectionauthor:: Krishna
+
 .. _terminology_media:
 
 Terminology
 ===========
-
-.. sectionauthor:: Krishna
-
-..
-    <Suggestions from Ashish - cover Channels, Streams, Subscriptions, etc.>
 
 .. glossary::
 

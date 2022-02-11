@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _pre_install_checklist_linux_java_headless_client_apps:
 
 Pre-Install Checklist
@@ -7,5 +9,3 @@ Pre-Install Checklist
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna

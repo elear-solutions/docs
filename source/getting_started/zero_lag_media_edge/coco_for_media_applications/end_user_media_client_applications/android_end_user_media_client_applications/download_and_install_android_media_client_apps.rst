@@ -1,9 +1,9 @@
+.. sectionauthor:: Krishna
+
 .. _download_and_install_android_media_client_apps:
 
 Download And Install
 ====================
-
-.. sectionauthor:: Krishna
 
 Before diving into the **COCO Media SDK Android** and getting familiar with the API, let's have a look at how to download our offering for your Android application.
 

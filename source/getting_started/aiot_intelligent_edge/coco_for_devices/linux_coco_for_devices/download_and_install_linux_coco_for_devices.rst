@@ -1,3 +1,5 @@
+.. sectionauthor:: Theja
+
 .. _download_and_install_linux_coco_for_devices:
 
 Download And Install
@@ -7,5 +9,3 @@ Download And Install
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Theja

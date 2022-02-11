@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _zero_lag_media_edge:
 
 Zero-Lag Media Edge
@@ -7,8 +9,6 @@ Zero-Lag Media Edge
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>
