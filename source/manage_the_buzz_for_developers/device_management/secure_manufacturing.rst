@@ -1,7 +1,11 @@
+.. sectionauthor:: Ashish
+
 .. _secure_manufacturing:
 
 Secure Manufacturing
 ====================
 
-..
-    <Content here - Owner: Ashish>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

@@ -1,8 +1,14 @@
+.. sectionauthor:: Rohan
+
 .. _quick_start_guide_swift_macos_headless_client_apps:
 
 Quick Start Guide
 =================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-    <Content here - Owner: Rohan
-    Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully. Also mentioning how Auto-Magically things connect to the COCO App>
+    <Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully. Also mentioning how Auto-Magically things connect to the COCO App>

@@ -1,7 +1,11 @@
+.. sectionauthor:: Narendra
+
 .. _api_reference_rest_ecosystem_bridge_apps:
 
 API Reference Documentation
 ===========================
 
-.. 
-    <Content here - Owner: Narendra>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

@@ -1,10 +1,17 @@
+.. sectionauthor:: Narendra
+
 .. _value_added_service_extensions_for_coco_solutions:
 
 Value-Added Service Extensions for COCO Solutions
 =================================================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Narendra>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

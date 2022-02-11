@@ -1,7 +1,11 @@
+.. sectionauthor:: Theja
+
 .. _download_and_install_linux_c_headless_client_apps:
 
 Download And Install
 ====================
 
-..
-    <Content here - Owner: Theja>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

@@ -1,10 +1,17 @@
+.. sectionauthor:: Manav
+
 .. _coco_for_applications:
 
 COCO For Applications
 =====================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Manav>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

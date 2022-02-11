@@ -1,10 +1,17 @@
+.. sectionauthor:: Manav
+
 .. _getting_started:
 
 Getting Started
 ===============
 
+.. figure:: _static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this section - Owner: Manav>
+   <Introduction to this section>
 
 .. toctree::
    :maxdepth: 5

@@ -1,10 +1,17 @@
+.. sectionauthor:: Manav
+
 .. _browser_js_analytics_client_applications:
 
 Browser (JavaScript)
 ====================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 .. 
-   <Introduction to this sub-section - Owner: Manav>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

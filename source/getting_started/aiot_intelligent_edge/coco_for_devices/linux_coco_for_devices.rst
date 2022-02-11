@@ -1,10 +1,17 @@
+.. sectionauthor:: Manav
+
 .. _linux_coco_for_devices:
 
 Linux
 =====
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Manav>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

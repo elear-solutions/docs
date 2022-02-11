@@ -1,10 +1,17 @@
+.. sectionauthor:: Narendra
+
 .. _native_apps:
 
 Native Apps
 ===========
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Narendra>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

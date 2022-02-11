@@ -1,10 +1,17 @@
+.. sectionauthor:: Narendra
+
 .. _single_page_apps:
 
 Single-Page Apps (SPA)
 ======================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Narendra>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

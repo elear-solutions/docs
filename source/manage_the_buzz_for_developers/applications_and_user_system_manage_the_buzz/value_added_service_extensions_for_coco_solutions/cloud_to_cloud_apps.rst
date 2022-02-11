@@ -1,10 +1,17 @@
+.. sectionauthor:: Narendra
+
 .. _cloud_to_cloud_apps:
 
 Cloud-To-Cloud Apps
 ===================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Narendra>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

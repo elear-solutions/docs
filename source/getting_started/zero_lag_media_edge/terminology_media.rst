@@ -1,8 +1,14 @@
+.. sectionauthor:: Krishna
+
 .. _terminology_media:
 
 Terminology
 ===========
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-    <Content here - Owner: Krishna
-    Suggestions from Ashish - cover Channels, Streams, Subscriptions, etc.>
+    <Suggestions from Ashish - cover Channels, Streams, Subscriptions, etc.>

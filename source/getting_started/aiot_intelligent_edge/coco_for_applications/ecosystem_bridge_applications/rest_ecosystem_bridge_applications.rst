@@ -1,10 +1,17 @@
+.. sectionauthor:: Manav
+
 .. _rest_ecosystem_bridge_applications:
 
 REST
 ====
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 .. 
-   <Introduction to this sub-section - Owner: Manav>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5

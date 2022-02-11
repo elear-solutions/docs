@@ -1,10 +1,17 @@
+.. sectionauthor:: Manav
+
 .. _applications_and_user_system_manage_the_buzz:
 
 Applications and User System
 ============================
 
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
 ..
-   <Introduction to this sub-section - Owner: Manav>
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
