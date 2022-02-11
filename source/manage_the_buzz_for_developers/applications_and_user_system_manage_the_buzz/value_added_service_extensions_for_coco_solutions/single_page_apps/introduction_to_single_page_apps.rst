@@ -1,6 +1,11 @@
+.. sectionauthor:: Narendra
+
 .. _introduction_to_single_page_apps:
 
 Introduction
 ============
 
-<Content here - Owner: Narendra>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

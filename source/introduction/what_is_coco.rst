@@ -1,7 +1,11 @@
+.. sectionauthor:: Ashish
+
 .. _what_is_coco:
 
 What is COCO?
 =============
 
-<Content here - Owner: Ashish>
+.. figure:: /_static/coming-soon.png
+   :align: center
 
+   **Coming Soon**

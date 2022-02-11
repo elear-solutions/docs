@@ -1,6 +1,11 @@
+.. sectionauthor:: Rohan
+
 .. _pre_install_checklist_ios_media_client_apps:
 
 Pre-Install Checklist
 =====================
 
-<Content here - Owner: Rohan>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

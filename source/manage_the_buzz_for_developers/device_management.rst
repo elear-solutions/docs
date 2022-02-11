@@ -1,14 +1,22 @@
+.. sectionauthor:: Manav
+
 .. _device_management:
 
 Device Management
 =================
 
-<Introduction to this sub-section - Owner: Manav>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+..
+   <Introduction to this sub-section>
 
 .. toctree::
    :maxdepth: 5
    :caption: In This Section:
 
-   secure_manufacturing
-   remote_diagnostics
-   ota_updates
+   device_management/secure_manufacturing
+   device_management/remote_diagnostics
+   device_management/ota_updates

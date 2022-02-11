@@ -1,6 +1,11 @@
+.. sectionauthor:: Theja
+
 .. _pre_install_checklist_linux_c_headless_client_apps:
 
 Pre-Install Checklist
 =====================
 
-<Content here - Owner: Theja>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

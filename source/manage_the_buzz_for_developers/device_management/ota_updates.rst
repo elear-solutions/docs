@@ -1,6 +1,11 @@
+.. sectionauthor:: Narendra
+
 .. _ota_updates:
 
 OTA Updates
 ===========
 
-<Content here - Owner: Narendra>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**

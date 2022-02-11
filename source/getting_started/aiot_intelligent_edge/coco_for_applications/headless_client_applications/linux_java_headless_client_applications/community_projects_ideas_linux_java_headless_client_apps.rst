@@ -1,7 +1,14 @@
+.. sectionauthor:: Ashish
+
 .. _community_projects_ideas_linux_java_headless_client_apps:
 
 Community Projects and Use Case Ideas
 =====================================
 
-<Content here - Owner: Ashish
-Suggestions from Ashish - Energy Optimizer Assistant, etc.]>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+..
+    <Suggestions from Ashish - Energy Optimizer Assistant, etc.>

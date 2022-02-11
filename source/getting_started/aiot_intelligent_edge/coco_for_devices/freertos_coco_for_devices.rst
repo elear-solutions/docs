@@ -1,7 +1,14 @@
+.. sectionauthor:: Manav
+
 .. _freertos_coco_for_devices:
 
 FreeRTOS (coming soon!)
 =======================
 
-<Content here - Owner: Manav
-Suggestion from Ashish - Coming Soon Placeholder Image>
+.. figure:: /_static/coming-soon.png
+   :align: center
+
+   **Coming Soon**
+
+..
+    <Suggestion from Ashish - Coming Soon Placeholder Image>

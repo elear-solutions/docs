@@ -1,7 +1,11 @@
+.. sectionauthor:: Narendra
+
 .. _features_manage_the_buzz:
 
 Features
 ========
 
-<Content here - Owner: Narendra>
+.. figure:: /_static/coming-soon.png
+   :align: center
 
+   **Coming Soon**
