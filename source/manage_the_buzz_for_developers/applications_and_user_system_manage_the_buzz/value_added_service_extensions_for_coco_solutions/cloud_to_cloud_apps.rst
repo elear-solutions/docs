@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _cloud_to_cloud_apps:
 
 Cloud-To-Cloud Apps
@@ -7,8 +9,6 @@ Cloud-To-Cloud Apps
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra
 
 ..
    <Introduction to this sub-section>

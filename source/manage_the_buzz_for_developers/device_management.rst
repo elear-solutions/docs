@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _device_management:
 
 Device Management
@@ -7,8 +9,6 @@ Device Management
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

@@ -61,4 +61,3 @@ A group of one or more actions and one or more conditions, where the actions are
 
 #. Switch on your geyser (resource action) at 6am every morning (schedule condition), or
 #. Toggle all the lights in a room (scene action) when motion is detected (resource condition).
-

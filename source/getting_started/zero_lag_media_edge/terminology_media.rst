@@ -1,3 +1,5 @@
+.. sectionauthor:: Krishna
+
 .. _terminology_media:
 
 Terminology
@@ -7,8 +9,6 @@ Terminology
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Krishna
 
 ..
     <Suggestions from Ashish - cover Channels, Streams, Subscriptions, etc.>

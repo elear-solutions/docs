@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _applications_and_user_system_manage_the_buzz:
 
 Applications and User System
@@ -7,8 +9,6 @@ Applications and User System
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 ..
    <Introduction to this sub-section>

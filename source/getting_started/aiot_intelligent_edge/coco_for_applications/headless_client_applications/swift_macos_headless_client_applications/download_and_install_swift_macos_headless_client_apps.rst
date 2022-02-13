@@ -1,3 +1,5 @@
+.. sectionauthor:: Rohan
+
 .. _download_and_install_swift_macos_headless_client_apps:
 
 Download And Install
@@ -7,5 +9,3 @@ Download And Install
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Rohan

@@ -1,3 +1,5 @@
+.. sectionauthor:: Manav
+
 .. _manage_the_buzz_for_developers:
 
 Manage the Buzz for Developers
@@ -7,8 +9,6 @@ Manage the Buzz for Developers
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Manav
 
 .. 
    <Introduction to this section>
