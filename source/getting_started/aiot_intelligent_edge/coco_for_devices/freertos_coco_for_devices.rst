@@ -5,10 +5,6 @@
 FreeRTOS (coming soon!)
 =======================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+Watch this space!
 
-   **Coming Soon**
-
-..
-    <Suggestion from Ashish - Coming Soon Placeholder Image>
+The upcoming COCO Bean SDK will be a C library for the FreeRTOS operating system. It will enable Microcontrollers and other memory/compute/power constrained devices behind appliances (such as Light Bulbs) or sensors to get Buzzed-on-COCO. In other words, they can become COCO Devices that provide control or data reporting features by implementing one or more capabilities in the :ref:`coco_standard`.

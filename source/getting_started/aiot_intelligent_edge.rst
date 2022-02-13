@@ -5,13 +5,7 @@
 AIoT Intelligent Edge
 =====================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce you to our AIoT Intelligent Edge platform, which includes support for IoT applications including the control of IoT appliances & data gathering from sensors; Zones, Scenes and Rules Management; Smart Data Analytics with a visualization interface; Support for connecting to Third Party Ecosystems like the Tuya platform; as well as the flexibility to adapt itself to pretty much any use case you can imagine that is well served by our peer-to-peer mesh network topology, including IoT Next use cases like Automotives or Machine Learning.
 
 .. toctree::
    :maxdepth: 5

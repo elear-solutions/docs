@@ -5,13 +5,7 @@
 REST
 ====
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. 
-   <Introduction to this sub-section>
+This section introduces you to the COCO REST API, a RESTful interface which enables the development of Bridge Applications, which can be developed in any language such as NodeJS, and used to implement the interoperability of COCO Resources with those in external systems like the Tuya Cloud platform.
 
 .. toctree::
    :maxdepth: 5

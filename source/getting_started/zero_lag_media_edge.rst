@@ -5,13 +5,7 @@
 Zero-Lag Media Edge
 ===================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce you to our Zero-lag Media Edge platform tailored to use cases like Watch Together, which includes support for Media Calls with multiple participants, support for exchanging video and audio, and support for sharing OTT content
 
 .. toctree::
    :maxdepth: 5

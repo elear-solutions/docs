@@ -5,13 +5,7 @@
 iOS
 ===
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+This section introduces you to the COCO Swift Media SDK, a flavour of the COCO Media SDK delivered as a Swift Framework (library) which enables the development of Mobile Apps for iOS phones or tablets, with Video/Audio calling between users and Watch Together features.
 
 .. toctree::
    :maxdepth: 5
