@@ -5,13 +5,7 @@
 COCO For Applications
 =====================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce the COCO SDK's for Applications - libraries for developing Client Applications that interface with COCO Devices, other COCO Clients, as well as the COCO Cloud for services like Analytics.
 
 .. toctree::
    :maxdepth: 5
