@@ -7,23 +7,34 @@ Quick Start Guide
 
 .. Suggestions from Ashish - Steps to Sync Sources, Compilation, and Running Successfully. Also mentioning how Auto-Magically things connect to the COCO App
 
-Application Build Process
-++++
+1. Application Build Process
+----------------------------
 
-1. Register an Single Page Application from here :ref:`quick_start_guide_single_page_apps`
-2. Clone sample application from `Github <https://github.com/elear-solutions/cocoanalyticssdk-js-energy-sample-app>`_ and checkout to master branch
-3. Steps to build
+a. Register an Single Page Application from here :ref:`quick_start_guide_single_page_apps`
 
-   1. update `CLIENT_ID` in `cocoanalyticssdk-js-energy-sample-app/src/environments/environment.ts`
-   2. npm i
-   3. ng serve
-4. Now you can see your application at **http://localhost:4200**
+b. Clone sample application from `Github <https://github.com/elear-solutions/cocoanalyticssdk-js-energy-sample-app>`_ and checkout to master branch
 
-Application usage
-++++
-1. Login to coco user account which has resources updating analytics data. after login you will see a page as shown below
-  .. image:: ../../../../../_static/analytics_welcome_page.png
-2. Select network and resolution as shown below
-  .. image:: ../../../../../_static/analytics_network_selection.png
-3. On successful analytics data fetch all graphs will be updated.
-  .. image:: ../../../../../_static/analytics_bargraph_data.png
+c. Steps to build
+
+   - update `CLIENT_ID` in `cocoanalyticssdk-js-energy-sample-app/src/environments/environment.ts`
+   - npm i
+   - ng serve
+
+d. Now you can see your application at **http://localhost:4200**
+
+2. Application usage
+--------------------
+a. Login to coco user account which has resources updating analytics data. after login you will see a page as shown below
+
+  .. image:: ../../../../../_static/getting_started/aiot_intelligent_edge/coco_for_applications/analytics_client_applications/analytics_welcome_page.png
+     :alt: Step 2a
+
+b. Select network and resolution as shown below
+
+  .. image:: ../../../../../_static/getting_started/aiot_intelligent_edge/coco_for_applications/analytics_client_applications/analytics_network_selection.png
+     :alt: Step 2b
+
+c. On successful analytics data fetch all graphs will be updated.
+
+  .. image:: ../../../../../_static/getting_started/aiot_intelligent_edge/coco_for_applications/analytics_client_applications/analytics_bargraph_data.png
+     :alt: Step 2c
