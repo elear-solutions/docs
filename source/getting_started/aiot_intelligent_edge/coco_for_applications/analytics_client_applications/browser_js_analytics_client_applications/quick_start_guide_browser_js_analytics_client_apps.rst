@@ -1,3 +1,5 @@
+.. sectionauthor:: Deekshith
+
 .. _quick_start_guide_browser_js_analytics_client_apps:
 
 Quick Start Guide

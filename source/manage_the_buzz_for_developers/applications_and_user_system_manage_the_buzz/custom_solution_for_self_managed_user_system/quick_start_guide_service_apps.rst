@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _quick_start_guide_service_apps:
 
 Quick Start Guide - Service Apps
@@ -7,5 +9,3 @@ Quick Start Guide - Service Apps
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

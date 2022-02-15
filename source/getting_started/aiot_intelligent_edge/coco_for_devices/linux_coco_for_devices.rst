@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _linux_coco_for_devices:
 
 Linux
 =====
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+This section introduces you to the COCO Device SDK, a C library for Linux-based devices like Gateways, Cameras, etc.; or alternatively for a virtual device running on a Linux based server and providing services based on COCO Capabilities such as Cloud Storage.
 
 .. toctree::
    :maxdepth: 5

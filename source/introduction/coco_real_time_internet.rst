@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _coco_real_time_internet:
 
 COCO Real-Time Internet (coming soon!)
@@ -7,5 +9,3 @@ COCO Real-Time Internet (coming soon!)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish

@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _architecture_media:
 
 Architecture
@@ -7,5 +9,3 @@ Architecture
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish

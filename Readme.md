@@ -17,7 +17,7 @@ You can now begin on documentation and following the [build steps](#build-steps)
 
 ## Virtual Environment
 
-If python virtual environment is **not** created for your local docs directory start with [Installation](#installation) steps for Ubuntu, else you can activate the virtual environment using [Activation and Deactivation](#activation-and-deactivation) steps.
+If python virtual environment is **not** created for your local docs directory start with [Installation](#installation) steps for Ubuntu, else you can activate the virtual environment using [Activation](#activation) and [Deactivation](#deactivation) steps.
 
 ### Installation
 
@@ -35,18 +35,23 @@ If python virtual environment is **not** created for your local docs directory s
 > pip3 install -r requirements.txt
 ```
 
-### Activation and Deactivation
+### Activation
 
 To activate the virtual environment created in your repo follow the below step. **Ignore** if already activated.
 
 ```console
 > source venv/bin/activate
-
-> # Exit/Deactivate the entered virtual environment run 
-> deactivate
 ```
 
-Once venv is activated you can begin on documentation and following the [build steps](#build-steps) guide.
+Activation of virtual environment can be confirmed as **(venv)** appears on the left side of the terminal then you can begin on documentation and following the [build steps](#build-steps) guide.
+
+### Deactivation
+
+Simple `deactivate` command will exit the activated virtual environment.
+
+```console
+(venv)> deactivate
+```
 
 ## Build Steps
 ```console

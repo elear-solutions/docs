@@ -1,17 +1,11 @@
-.. _swift_macos_headless_client_applications copy:
-
-Swift (MacOS)
-=============
-
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
 .. sectionauthor:: Manav
 
-..
-   <Introduction to this sub-section>
+.. _swift_macos_headless_client_applications copy:
+
+MacOS (Swift)
+=============
+
+This section introduces you to the COCO Swift SDK for MacOS, which enables the development of Headless Client Applications, which can run on MacOS computers and perform system functions like deriving inferences using Machine Learning algorithms.
 
 .. toctree::
    :maxdepth: 5

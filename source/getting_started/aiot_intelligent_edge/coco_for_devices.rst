@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _coco_for_devices:
 
 COCO For Devices
 ================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce the COCO Device SDK - a library for developing OEM or Virtual Device Applications.
 
 .. toctree::
    :maxdepth: 5

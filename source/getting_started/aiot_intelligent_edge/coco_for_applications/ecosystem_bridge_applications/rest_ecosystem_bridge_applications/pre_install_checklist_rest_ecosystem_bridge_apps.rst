@@ -1,3 +1,5 @@
+.. sectionauthor:: Narendra
+
 .. _pre_install_checklist_rest_ecosystem_bridge_apps:
 
 Pre-Install Checklist
@@ -7,5 +9,3 @@ Pre-Install Checklist
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Narendra

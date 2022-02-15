@@ -1,3 +1,5 @@
+.. sectionauthor:: Ashish
+
 .. _coco_grove:
 
 COCO Grove (coming soon!)
@@ -7,8 +9,6 @@ COCO Grove (coming soon!)
    :align: center
 
    **Coming Soon**
-
-.. sectionauthor:: Ashish
 
 ..
     <Inroduction to this section>

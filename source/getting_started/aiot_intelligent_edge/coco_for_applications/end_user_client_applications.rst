@@ -1,17 +1,14 @@
+.. sectionauthor:: Manav
+
 .. _end_user_client_applications:
 
 End-User Client Applications
 ============================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+In this section, we introduce the following COCO Client SDK flavours which enable the development of End-User Client Applications, for User Interface-driven applications for use cases such as controlling COCO Resources or receiving data from them:
 
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+#. COCO Android SDK
+#. COCO Swift SDK for iOS
 
 .. toctree::
    :maxdepth: 5

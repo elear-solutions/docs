@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _android_end_user_media_client_applications:
 
 Android
 =======
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+This section introduces you to the COCO Android Media SDK, a flavour of the COCO Media SDK delivered as an Android library which enables the development of Mobile Apps for Android phones or tablets, with Video/Audio calling between users and Watch Together features.
 
 .. toctree::
    :maxdepth: 5

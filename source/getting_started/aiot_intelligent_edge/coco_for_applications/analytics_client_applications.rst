@@ -1,17 +1,11 @@
+.. sectionauthor:: Manav
+
 .. _analytics_client_applications:
 
 Analytics Client Applications
 =============================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. sectionauthor:: Manav
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce the COCO Analytics SDK which enables the development of Client Applications presenting summarized data from COCO Resources.
 
 .. toctree::
    :maxdepth: 5
