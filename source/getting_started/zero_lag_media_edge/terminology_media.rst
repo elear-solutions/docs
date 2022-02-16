@@ -9,9 +9,11 @@ Terminology
 
    Network
       | In common words, a Network is the centralizing entity that connects all users (more particularly, Nodes) and allows them to share their Streams (Audio & Video) with one another.
-      | Network when connected, allows for real-time calls and, when disconnected, terminates all :term:`Channel` and :term:`Stream`.
+      | Network when connected, allows for real-time calls and, when disconnected, terminates all :term:`Channel` and Streams.
+
       | For example a Network could be named "⚽ watch party🎉🎉 at 7".
       | And once a network is created (by you), you can invite any number of users and they all can start sharing their streams.
+
       .. note:: Streams are not recordable (as yet). So, a stream can only be received when both the sender and receiver are online.
 
    Session
