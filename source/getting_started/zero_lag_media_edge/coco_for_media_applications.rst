@@ -5,13 +5,7 @@
 COCO For Media Applications
 ===========================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+In this section, we introduce the COCO SDK's for Media Applications - libraries for developing Media Applications that facilitate Video/Audio Calls with Watch Together features. 
 
 .. toctree::
    :maxdepth: 5

@@ -5,13 +5,10 @@
 End-User Media Client Applications
 ==================================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+In this section, we introduce the following COCO Media SDK flavours which enable the development of End-User Client Applications, for conducting Video/Audio calls with Watch Together features:
 
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+#. COCO Android Media SDK
+#. COCO Swift Media SDK for iOS
 
 .. toctree::
    :maxdepth: 5
