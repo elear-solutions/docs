@@ -23,6 +23,8 @@ Register Application
 
 .. image:: ../../../_static/serviceAppDetails.png
 
+4. Copy the clientId and client secret by clicking on eye icon at the right.
+
 5. In the app, use the above client credentials with the COCO token API to get access/refresh tokens to access COCO cloud.
    
    Token endpoint: POST https://api.getcoco.buzz/v1.0/oauth/token and takes the below params.
