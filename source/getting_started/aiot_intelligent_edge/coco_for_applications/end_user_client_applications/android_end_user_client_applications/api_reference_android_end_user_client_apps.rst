@@ -5,7 +5,6 @@
 API Reference Documentation
 ===========================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+Now that we've figured out how to make an Android app with fully functional **IoT SDK Android** integration, we can go deeper into API documentation. 
 
-   **Coming Soon**
+Visit `cococlientsdk-java <https://docs.getcoco.buzz/iot-sdk/android-api-for-client-apps/index.html>`_.
