@@ -5,13 +5,7 @@
 Cloud-To-Cloud Apps
 ===================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-..
-   <Introduction to this sub-section>
+.. sectionauthor:: Narendra
 
 .. toctree::
    :maxdepth: 5
