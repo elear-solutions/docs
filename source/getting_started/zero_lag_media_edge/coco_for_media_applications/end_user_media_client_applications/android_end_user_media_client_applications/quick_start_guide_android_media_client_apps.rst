@@ -44,35 +44,35 @@ Step4: Navigating Through Sample App
       :align: center
 
    - LoginActivity
-      This screen demonstrates the Third-party login solution for service apps.
+      This screen allows the user to login passing his external user ID and base url of Node sample token server.
 
    .. image:: /_static/android_end_user_media_client_applications/pre_install_checklist/sessions_login.jpeg
       :scale: 40
       :align: center
 
    - ViewSessionsActivity
-      This screen demonstrates how to fetch all the MediaSessions that a user is part of and start the call.
+      This screen displays all the MediaSessions that a user is part of. It also facilitates joining and deletion of those sessions.
 
    .. image:: /_static/android_end_user_media_client_applications/pre_install_checklist/sessions_view_sessions.jpeg
       :scale: 40
       :align: center
 
    - CreateSessionActivity
-      This screen collects the details of the call a user wants to create and navigates to CallerActivity.
+      This screen receives the name of the session that the user wishes to create and directs the user to CallerActivity.
 
    .. image:: /_static/android_end_user_media_client_applications/pre_install_checklist/sessions_create_session.jpeg
       :scale: 40
       :align: center
 
    - CallerActivity
-      This screen demonstrates the creation and joining the call.
+      This screen appears once the session has been successfully created or joined.
 
    .. image:: /_static/android_end_user_media_client_applications/pre_install_checklist/sessions_caller_activity.jpeg
       :scale: 40
       :align: center
 
    - InviteUserActivity
-      This screen deals with the code to invite a user to the :term:`session` using User ID.
+      This screen allows you to invite a person to a :term:`session` by providing his user ID.
 
    .. image:: /_static/android_end_user_media_client_applications/pre_install_checklist/sessions_invite_user.jpeg
       :scale: 40
