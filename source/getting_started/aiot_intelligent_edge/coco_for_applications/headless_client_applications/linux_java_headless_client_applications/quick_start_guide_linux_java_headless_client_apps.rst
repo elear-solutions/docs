@@ -9,21 +9,21 @@ The **Coco Camera Object Detection** example shows how the **COCO IoT SDK Java**
 
 This tutorial will assist you with setting up our example app and experience how we integrated the **COCO IoT SDK Java**.
 
-.. TODO: change download link
-
 Step1: Clone Sample App Repo
    - Visit `SampleApp Repo`_ on official `Elear Solutions`_ organization account, you can either clone using:
 
 .. code-block:: shell
 
-    git clone git@github.com:elear-solutions/cococlientsdk-java-iot-sample-app.git
+    git clone git@github.com:elear-solutions/cocoiotsdk-samples.git
 
 ----
 
-    or :download:`download source code <https://github.com/elear-solutions/cococlientsdk-java-iot-sample-app/archive/refs/heads/main.zip>`.
+    or :download:`download source code <https://github.com/elear-solutions/cocoiotsdk-samples/archive/refs/heads/main.zip>`.
 
    - After unpacking the downloaded ZIP or cloning the repo we are good to
      start with IntelliJ Idea(Any IDE of your interest).
+
+   - Navigate to :kbd:`client/java/CocoCameraObjectDetection`
 
 ----
 
@@ -48,8 +48,7 @@ Step3: Run the example
    
    ./gradlew run --args=/path/to/invite.json
 
-.. TODO: change this after repo is added
 
-.. _SampleApp Repo: https://github.com/elear-solutions/cococlientsdk-java-iot-sample-app
+.. _SampleApp Repo: https://github.com/elear-solutions/cocoiotsdk-samples/tree/main/client/java/CocoCameraObjectDetection
 
 .. _Elear Solutions: https://github.com/elear-solutions

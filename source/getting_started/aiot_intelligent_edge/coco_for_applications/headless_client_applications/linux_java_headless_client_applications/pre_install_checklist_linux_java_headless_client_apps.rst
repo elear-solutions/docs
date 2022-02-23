@@ -14,7 +14,5 @@ Git
 Java
   `Setup <https://www.oracle.com/java/technologies/downloads/#java8>`_ JDK (>= 8.0) to compile and run the app.
 
-.. TODO: add standalone app section link.
-
 Generate Invite
-  Follow the quick start guide for Standalone apps with steps to Generate Invite.
+  Follow the quick start guide for :ref:`Standalone apps <standalone_apps>` with steps to Generate Invite.
