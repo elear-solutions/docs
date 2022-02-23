@@ -5,7 +5,10 @@
 Features
 ========
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+- Register and Manage Apps
+- Register Products and Manage Devices
+- Secure Manufacturing
+- Remote Diagnostics
+- OTA Updates
 
-   **Coming Soon**
+.. sectionauthor:: Narendra

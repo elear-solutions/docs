@@ -5,13 +5,7 @@
 Browser (JavaScript)
 ====================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
-
-   **Coming Soon**
-
-.. 
-   <Introduction to this sub-section>
+This section introduces you to the JavaScript flavour of the COCO Analytics SDK, a library which enables the development of Browser-based Web Apps for presenting time-range summarized data based on COCO Resource Attribute data aggregated in the COCO Cloud.
 
 .. toctree::
    :maxdepth: 5
