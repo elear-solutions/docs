@@ -5,7 +5,6 @@
 Download And Install
 ====================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+.. sectionauthor:: Deekshith
 
-   **Coming Soon**
+No additional software to be downloaded for this application.

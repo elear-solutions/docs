@@ -5,7 +5,6 @@
 API Reference Documentation
 ===========================
 
-.. figure:: /_static/coming-soon.png
-   :align: center
+.. sectionauthor:: Deekshith
 
-   **Coming Soon**
+1. Refer complete analytics API's documentation `here <https://docs.getcoco.buzz/CocoAnalytics.html>`_ 
