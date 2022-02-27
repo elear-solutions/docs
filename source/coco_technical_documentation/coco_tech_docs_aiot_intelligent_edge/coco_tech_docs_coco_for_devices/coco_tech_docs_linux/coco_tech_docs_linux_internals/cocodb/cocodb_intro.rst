@@ -5,7 +5,7 @@
 Introduction
 ============
 
-The cocodb repo implements an SQLite-based Database for storing the data used by the Device SDK for its processing, including :ref: `COCONet <terminology_aiot:COCONet>` and :ref: `Resource <terminology_aiot:Resource>` information.
+The cocodb repo implements an SQLite-based Database for storing the data used by the Device SDK for its processing, including :ref: `COCONet <terminology_aiot:COCONet>` and :ref:`Resource <terminology_aiot:Resource>` information.
 
 The cocodb library depends on the following third-party libraries:
 

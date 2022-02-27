@@ -19,6 +19,41 @@ VERSION
 
 Table containing information about each of the Firmware Versions that this COCO Device has had, and the corresponding Database Version of each Firmware Version, for the purpose of performing any applicable data migrations.
 
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DB_VERSION
+        - 
+        - 
+        - TEXT
+        - The currently installed version of the cocodb
+
+      * - APP_VERSION
+        - 
+        - 
+        - TEXT
+        - The currently installed version of the Firmware of this COCO Device
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
 
 Device Information
 ##################
@@ -370,13 +405,13 @@ Table containing information about the Capabilities [link] offered by each of th
         - X
         - To RESOURCE.RESOURCE_EUI
         - TEXT
-        - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. The same Resource EUI can exist on two different COCO Devices, so the Unique Device Identifier (Device ID) must be used in combination with Resource EUI to uniquely identify a Resource across the entire COCONet.
+        - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. See  :ref:`RESOURCE` table for further explanation.
 
       * - CAPABILITY_ID
         - X
         - 
         - INT
-        - Unique Identifier of the supported Capability of the Resource
+        - Unique Identifier of the supported Capability of the Resource. The ID should be one of the values of the enum **coco_std_capability_t** declared in **coco_std_api.h**.
 
       * - RESOURCE_CAPABILITY_INFO
         - 
@@ -441,13 +476,13 @@ Table containing information about the Attributes [link] stored within each of t
         - X
         - To RESOURCE.RESOURCE_EUI (Composite key with CAPABILITY_ID column)
         - TEXT
-        - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. The same Resource EUI can exist on two different COCO Devices, so the Unique Device Identifier (Device ID) must be used in combination with Resource EUI to uniquely identify a Resource across the entire COCONet.
+        - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. See :ref:`RESOURCE` table for further explanation.
 
       * - CAPABILITY_ID
         - X
         - To RESOURCE.CAPABILITY_ID (Composite key with RESOURCE_EUI column)
         - INT
-        - Unique Identifier of the supported Capability of the Resource. The ID should be one of the values of the enum **coco_std_capability_t** declared in **coco_std_api.h**
+        - Unique Identifier of the supported Capability of the Resource. See :ref:`RESOURCE_CAPABILITY` table for futher information.
 
       * - ATTRIBUTE_ID
         - X
@@ -545,6 +580,35 @@ REMOVED_RESOURCE
 ****************
 
 Table containing the list of Resources that have been removed from this COCO Device. ?????? This is utilized to resolve certain race conditions where different Client Applications may perform successive actions for adding, removing and then once again adding a resource to the COCONet. ??????
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - RESOURCE_EUI
+        - 
+        - 
+        - TEXT
+        - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. See :ref:`RESOURCE` table for further explanation.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
 
 
 Resource Sub-cluster Information
