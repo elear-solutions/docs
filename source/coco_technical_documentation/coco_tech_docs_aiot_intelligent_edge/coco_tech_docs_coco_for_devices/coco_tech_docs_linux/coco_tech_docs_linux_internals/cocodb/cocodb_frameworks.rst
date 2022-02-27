@@ -70,7 +70,7 @@ Table containing information about this COCO Device.
 
       * - Column
         - Primary Key
-        - Foreign Key
+        - Foreign Key (To Table.Column)
         - SQLite Data Type
         - Description
 
@@ -79,12 +79,6 @@ Table containing information about this COCO Device.
         - 
         - TEXT
         - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
-
-      * - DEVICE_NAME
-        - 
-        - 
-        - TEXT
-        - Name of this COCO Device in the COCONet
 
       * - PRODUCT_NAME
         - X
@@ -103,6 +97,12 @@ Table containing information about this COCO Device.
         - 
         - TEXT
         - Make (Brand Name) of the Product, for example, COCO
+
+      * - DEVICE_NAME
+        - 
+        - 
+        - TEXT
+        - Name of this COCO Device in the COCONet
 
       * - FW_VERSION
         - 
@@ -138,7 +138,7 @@ Table containing information about the COCONet that this COCO Device belongs to.
 
       * - Column
         - Primary Key
-        - Foreign Key
+        - Foreign Key (To Table.Column)
         - SQLite Data Type
         - Description
 
@@ -194,7 +194,7 @@ Table containing information about the Client Application nodes that exist in th
 
       * - Column
         - Primary Key
-        - Foreign Key
+        - Foreign Key (To Table.Column)
         - SQLite Data Type
         - Description
 
@@ -280,7 +280,7 @@ Table containing information about the Resources [link] provided by this COCO De
 
       * - Column
         - Primary Key
-        - Foreign Key
+        - Foreign Key (To Table.Column)
         - SQLite Data Type
         - Description
 
@@ -614,43 +614,682 @@ Table containing the list of Resources that have been removed from this COCO Dev
 Resource Sub-cluster Information
 ################################
 
-*RESOURCE_SUBCLUSTER_METADATA* - Table containing Metadata that is specific to different Sub-clusters within the COCONet, for the Resources provided by this COCO Device. Different Client Applications or groups of related applications (such as a Microsoft Office-like suite of products, or the COCO iOS and Android Apps) are assigned a unique Sub-cluster Identifier (or Sub-cluster ID) of their own. Different Resource Metadata can be stored for each of the Resources in the COCONet for each of the Sub-clusters in the COCONet. For example, the COCO App has pre-defined resource icons and it assigns them to resources by storing the Icon Identifier as the Metadata for the Resource for the COCO App's Sub-cluster. Similarly, another product using the COCO platform may define it's own back-end or UI-specific data that it may store as Resource Sub-cluster Metadata.
+RESOURCE_SUBCLUSTER_METADATA
+****************************
 
+Table containing Metadata that is specific to different Sub-clusters within the COCONet, for the Resources provided by this COCO Device. Different Client Applications or groups of related applications (such as a Microsoft Office-like suite of products, or the COCO iOS and Android Apps) are assigned a unique Sub-cluster Identifier (or Sub-cluster ID) of their own. Different Resource Metadata can be stored for each of the Resources in the COCONet for each of the Sub-clusters in the COCONet. For example, the COCO App has pre-defined resource icons and it assigns them to resources by storing the Icon Identifier as the Metadata for the Resource for the COCO App's Sub-cluster. Similarly, another product using the COCO platform may define it's own back-end or UI-specific data that it may store as Resource Sub-cluster Metadata.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RESOURCE_EUI
+        - X
+        - 
+        - TEXT
+        - Extended Unique Identifier for uniquely identifying the Resource within a COCO Device. See :ref:`RESOURCE` table for further explanation.
+
+      * - SUBCLUSTER_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of the Client Application Sub-cluster to which the metadata belongs.
+
+      * - METADATA
+        - 
+        - 
+        - TEXT
+        - Free-form Metadata string. The format is determined by the Third Party Application.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
 
 Zone Information
 ################
 
-*ZONE* - Table containing information about the Zones [link] that are defined in this COCO Device's COCONet. This contains information about all the Zones of the COCONet including those not containing any of the Resources provided by this COCO Device.
+ZONE
+****
 
-*ZONE_RESOURCE* - Table containing information about the Resources contained within each of the Zones [link] existing in this COCO Device's COCONet. This contains information about all the Resources of the COCONet including the Resources not provided by this COCO Device.
+Table containing information about the Zones [link] that are defined in this COCO Device's COCONet. This contains information about all the Zones of the COCONet including those not containing any of the Resources provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - ZONE_ID
+        - 
+        - 
+        - INT
+        - Unique Identifer of the Zone within the COCONet.
+
+      * - ZONE_NAME
+        - 
+        - 
+        - TEXT
+        - Name of the Zone
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+ZONE_RESOURCE
+*************
+
+Table containing information about the Resources contained within each of the Zones [link] existing in this COCO Device's COCONet. This contains information about all the Resources of the COCONet including the Resources not provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - ZONE_ID
+        - X
+        - To ZONE.ZONE_ID
+        - INT
+        - Unique Identifer of the Zone within the COCONet.
+
+      * - GATEWAY_NODE_ID
+        - X
+        - 
+        - INT
+        - Node ID of the COCO Device to which the Zone's Resource belongs.
+
+      * - RESOURCE_EUI
+        - X
+        - 
+        - TEXT
+        - EUI of the Resource contained within the Zone.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
 
 
 Scene Information
 #################
 
-*SCENE* - Table containing information about the Scenes [link] that are defined in this COCO Device's COCONet. This contains information about all the Scenes of the COCONet including those containing actions for Resources not provided by this COCO Device.
+SCENE
+*****
 
-*SCENE_RESOURCE_ACTION* - Table containing information about the Resource Actions defined for each of the Scenes [link] existing in this COCO Device's COCONet. This contains information about the actions of all the Resources of the COCONet including the Resources not provided by this COCO Device.
+Table containing information about the Scenes [link] that are defined in this COCO Device's COCONet. This contains information about all the Scenes of the COCONet including those containing actions for Resources not provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - SCENE_ID
+        - 
+        - 
+        - INT
+        - Unique Identifer of the Scene within the COCONet.
+
+      * - SCENE_NAME
+        - 
+        - 
+        - TEXT
+        - Name of the Scene
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+SCENE_RESOURCE_ACTION
+*********************
+
+Table containing information about the Resource Actions defined for each of the Scenes [link] existing in this COCO Device's COCONet. This contains information about the actions of all the Resources of the COCONet including the Resources not provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - SCENE_ID
+        - X
+        - To SCENE.SCENE_ID
+        - INT
+        - Unique Identifer of the Scene within the COCONet.
+
+      * - SCENE_RESOURCE_ACTION_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of this resource action within this Scene
+
+      * - GATEWAY_NODE_ID
+        - 
+        - 
+        - INT
+        - Node ID of the COCO Device to which the Resource of this resource action belongs.
+
+      * - RESOURCE_EUI
+        - 
+        - 
+        - TEXT
+        - EUI of the Resource for which this resource action is to be executed.
+
+      * - CAPABILITY_ID
+        - 
+        - 
+        - INT
+        - Unique Identifier of the supported Capability of the Resource in which the resource command is to be executed as part of this resource action.
+
+      * - CMD_ID
+        - 
+        - 
+        - INT
+        - COCO Standard Command ID of the resource command to be executed in this resource action. For possible values, see the :ref:`RESOURCE_CAPABILITY` table.
+
+      * - CMD_PARAMS
+        - 
+        - 
+        - TEXT
+        - JSON String containing the values of the parameters to be passed with the resource command as a part of this resource action. For the possible parameters of resource commands, see the **coco_std_cmd_<cmd_name>_t** structure declarations under the header file belonging to each COCO Standard Capabilities, for e.g. the *coco_std_cmd_set_level_t* struct in *coco_std_data_level_types.h* represents the possible parameters for the Set Level resource command in the COCO Standard Level Control Capability.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
 
 
 Scene Sub-cluster Information
 #############################
 
-*SCENE_SUBCLUSTER_METADATA* - Table containing Metadata that is specific to different Sub-clusters within the COCONet, for the Scenes defined in this COCO Device's COCONet. For example, the COCO App has pre-defined scene icons and it assigns them to scenes by storing the Icon Identifier as the Metadata for the Scene for the COCO App's Sub-cluster. See Resource Sub-cluster Information [link] for an explanation of Sub-cluster Metadata.
+SCENE_SUBCLUSTER_METADATA
+*************************
+
+Table containing Metadata that is specific to different Sub-clusters within the COCONet, for the Scenes defined in this COCO Device's COCONet. For example, the COCO App has pre-defined scene icons and it assigns them to scenes by storing the Icon Identifier as the Metadata for the Scene for the COCO App's Sub-cluster. See :ref:`Resource Sub-cluster Information` for an explanation of Sub-cluster Metadata.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - SCENE_ID
+        - X
+        - 
+        - INT
+        - Unique Identifer of the Scene within the COCONet.
+
+      * - SUBCLUSTER_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of the Client Application Sub-cluster to which the metadata belongs.
+
+      * - METADATA
+        - 
+        - 
+        - TEXT
+        - Free-form Metadata string. The format is determined by the Third Party Application.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
 
 
 Rule Information
 ################
 
-*RULE* - Table containing information about the Rules [link] that are defined in this COCO Device's COCONet. This contains information about all the Rules of the COCONet including those not containing any actions or conditions for the Resources provided by this COCO Device.
+RULE
+****
 
-*RULE_RESOURCE_ACTION* - Table containing information about the Resource Actions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about the actions of all the Resources of the COCONet including the Resources not provided by this COCO Device.
+Table containing information about the Rules [link] that are defined in this COCO Device's COCONet. This contains information about all the Rules of the COCONet including those not containing any actions or conditions for the Resources provided by this COCO Device.
 
-*RULE_SCENE_ACTION* - Table containing information about the Scene Actions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about all the Scenes of the COCONet including those not having any actions for the Resources provided by this COCO Device.
+.. sidebar:: Schema
 
-*RULE_CONDN_RES_CAP_ATTR* - Table containing information about the Resource Attribute Conditions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about all the conditions of all the Rules of the COCONet including the conditions relating to Resources not provided by this COCO Device.
+   .. list-table::
+      :header-rows: 1
 
-*RULE_SCHEDULE_CONDITION* - Table containing information about the Schedule Conditions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about the schedule conditions of all the Rules of the COCONet those the Rules that don't have any actions or conditions relating to the resources provided by this COCO Device.
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RULE_ID
+        - 
+        - 
+        - INT
+        - Unique Identifer of the Rule within the COCONet.
+
+      * - RULE_NAME
+        - 
+        - 
+        - TEXT
+        - Name of the Rule
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+RULE_RESOURCE_ACTION
+********************
+
+Table containing information about the Resource Actions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about the actions of all the Resources of the COCONet including the Resources not provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RULE_ID
+        - X
+        - To RULE.RULE_ID
+        - INT
+        - Unique Identifer of the Rule within the COCONet.
+
+      * - RULE_RESOURCE_ACTION_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of this resource action within this Rule
+
+      * - GATEWAY_NODE_ID
+        - 
+        - 
+        - INT
+        - Node ID of the COCO Device to which the Resource of this resource action belongs.
+
+      * - RESOURCE_EUI
+        - 
+        - 
+        - TEXT
+        - EUI of the Resource for which this resource action is to be executed.
+
+      * - CAPABILITY_ID
+        - 
+        - 
+        - INT
+        - Unique Identifier of the supported Capability of the Resource in which the resource command is to be executed as part of this resource action.
+
+      * - CMD_ID
+        - 
+        - 
+        - INT
+        - COCO Standard Command ID of the resource command to be executed in this resource action. For possible values, see the :ref:`RESOURCE_CAPABILITY` table.
+
+      * - CMD_PARAMS
+        - 
+        - 
+        - TEXT
+        - JSON String containing the values of the parameters to be passed with the resource command as a part of this resource action. See the :ref:`SCENE_RESOURCE_ACTION` table for further explanation.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+RULE_SCENE_ACTION
+*****************
+
+Table containing information about the Scene Actions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about all the Scenes of the COCONet including those not having any actions for the Resources provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RULE_ID
+        - X
+        - To RULE.RULE_ID
+        - INT
+        - Unique Identifer of the Rule within the COCONet.
+
+      * - SCENE_ID
+        - X
+        - 
+        - INT
+        - Scene ID of the scene to be executed in this scene action within the Rule.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+RULE_CONDN_RES_CAP_ATTR
+***********************
+
+Table containing information about the Resource Attribute Conditions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about all the conditions of all the Rules of the COCONet including the conditions relating to Resources not provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RULE_ID
+        - X
+        - To RULE.RULE_ID
+        - INT
+        - Unique Identifer of the Rule within the COCONet.
+
+      * - RULE_RESOURCE_CONDN_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of this resource condition within this Rule
+
+      * - GATEWAY_NODE_ID
+        - 
+        - 
+        - INT
+        - Node ID of the COCO Device to which the Resource of this resource condition belongs.
+
+      * - RESOURCE_EUI
+        - 
+        - 
+        - TEXT
+        - EUI of the Resource to which this resource condition belongs
+
+      * - CAPABILITY_ID
+        - 
+        - 
+        - INT
+        - Unique Identifier of the supported Capability of the Resource to which this resource condition belongs
+
+      * - ATTRIBUTE_ID
+        - 
+        - 
+        - INT
+        - Unique Identifier of the supported Attribute of the Capability and Resource to which this resource condition belongs
+
+      * - RULE_CONDN_OPERATOR_ID
+        - 
+        - 
+        - INT
+        - Numeric Identifier of the Relational Condition to be applied in this resource condition. For e.g. 'Equals' or 'Greater Than'. The possible numeric values of this column are specified in the **rule_condn_operator_id** enum in the **cocodb_common_types.h** header file.
+
+      * - RULE_CONDN_VAL_DATA_TYPE_ID
+        - 
+        - 
+        - INT
+        - The Data Type of the value to which this resource condition is applied. The possible numeric values of this column are specified in the **rule_condn_data_type_id** enum in the **cocodb_common_types.h** header file.
+
+      * - CURRENT_VAL
+        - 
+        - 
+        - TEXT
+        - The Current Value of the resource attribute to which this resource condition belongs. The COCO Device's Rules Engine uses this column to evaluate whether a resource condition is satisfied. Whenever a report is published for this attribute, the current value is updated in this column. The reason this is needed in addition to the :ref:`RESOURCE_CAPABILITY_ATTRIBUTE` table's current value is because the resource condition might belong to a resource that exists on a different COCO Device - in such an instance, the attribute data of the resource will not be available in the RESOURCE_CAPABILITY_ATTRIBUTE table of this device's cocodb.
+
+      * - RULE_CONDN_VAL
+        - 
+        - 
+        - TEXT
+        - The Target Value that must be satisfied using the RULE_CONDN_OPERATOR_ID above (for e.g. 'Less Than or Equal To' 3) in order for the rule actions to be executed.
+
+      * - RULE_CONDN_DUR_MS
+        - 
+        - 
+        - INT
+        - The duration (in milliseconds) for which the resource attribute must satisfy this resource condition in order for the rule actions to be executed. For e.g. if the condition is <= 3 with a duration of 3,000 milliseconds (or 3 seconds), and the value changes to 4 after 1,000 milliseconds, the rule will not be executed. If the value remains within 3, the rule will be executed at the 3,000-millisecond mark.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+RULE_SCHEDULE_CONDITION
+***********************
+
+Table containing information about the Schedule Conditions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about the schedule conditions of all the Rules of the COCONet those the Rules that don't have any actions or conditions relating to the resources provided by this COCO Device.
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RULE_ID
+        - X
+        - To RULE.RULE_ID
+        - INT
+        - Unique Identifer of the Rule within the COCONet.
+
+      * - RULE_SCHED_CONDN_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of this schedule condition within this Rule
+
+      * - RULE_CONDN_SCHED_TYPE_ID
+        - 
+        - 
+        - TEXT
+        - The schedule type which specifies the frequency at which the schedule occurs for this schedule condition. For e.g. the schedule could specify executing a rule once a month on the 3rd day of the month within a specified time range, as long as all resource conditions are met. The possible numeric values of this column are specified in the **coco_std_rule_sched_type_t** enum in the **coco_std_api.h** header file of the **cocostandard** library.
+
+      * - RULE_START_TIME
+        - 
+        - 
+        - DATETIME
+        - A Date/Time value specifying the first date of execution, and the beginning of the time range within a 24-hour time window, within which this rule must be executed. As long as nothing goes wrong, the rule will execute at this Start Time. However, for instance, if the COCO Device is offline at the start time, the rule will execute at the earliest possible time bfore the Expiry Time, if the COCO Device comes online again within the time range. After the first execution date has passed, the next execution date is determined by the RULE_CONDN_SCHED_TYPE_ID - for instance, a 'Daily' schedule type results in the rule executing again on the next day, whereas a 'Monthly' type results in execution occuring again on the next month on which the same day of month occurs again (for instance, if the date is the 31st, the rule will only execute on six out of twelve months of the year).
+
+      * - RULE_EXP_TIME
+        - 
+        - 
+        - DATETIME
+        - The end of the time range within a 24-hour time window, within which this rule must be executed.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
 
 
 ****************************
