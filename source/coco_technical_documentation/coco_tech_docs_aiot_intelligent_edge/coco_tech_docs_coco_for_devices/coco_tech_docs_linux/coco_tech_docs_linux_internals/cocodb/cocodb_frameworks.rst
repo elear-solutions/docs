@@ -579,7 +579,7 @@ Table containing information about the Attributes [link] stored within each of t
 REMOVED_RESOURCE
 ****************
 
-Table containing the list of Resources that have been removed from this COCO Device. ?????? This is utilized to resolve certain race conditions where different Client Applications may perform successive actions for adding, removing and then once again adding a resource to the COCONet. ??????
+Table containing the list of Resources that have been removed from this COCO Device. ?????? Explain the reason for this here ??????
 
 .. sidebar:: Schema
 
