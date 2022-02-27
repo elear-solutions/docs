@@ -23,7 +23,10 @@ Table containing information about each of the Firmware Versions that this COCO 
 Device Information
 ##################
 
-* **DEVICE_INFO** - Table containing information about this COCO Device.
+DEVICE_INFO
+***********
+
+Table containing information about this COCO Device.
 
 .. sidebar:: Schema
 
@@ -88,7 +91,10 @@ Device Information
 Network Information
 ###################
 
-**NETWORK** - Table containing information about the COCONet that this COCO Device belongs to. In the current platform, this table only contains one row since a COCO Device can only belong to one COCONet at a time.
+NETWORK
+*******
+
+Table containing information about the COCONet that this COCO Device belongs to. In the current platform, this table only contains one row since a COCO Device can only belong to one COCONet at a time.
 
 .. sidebar:: Schema
 
@@ -141,7 +147,10 @@ Network Information
 Node Information
 ################
 
-**NODE** - Table containing information about the Client Application nodes that exist in the COCONet that this COCO Device belongs to.
+NODE
+****
+
+Table containing information about the Client Application nodes that exist in the COCONet that this COCO Device belongs to.
 
 .. sidebar:: Schema
 
@@ -224,7 +233,10 @@ Node Information
 Resource Information
 ####################
 
-**RESOURCE** - Table containing information about the Resources [link] provided by this COCO Device.
+RESOURCE
+********
+
+Table containing information about the Resources [link] provided by this COCO Device.
 
 .. sidebar:: Schema
 
@@ -332,7 +344,10 @@ Resource Information
         - Metadata of Resource for this Sub-cluster
 
 
-**RESOURCE_CAPABILITY** - Table containing information about the Capabilities [link] offered by each of the Resources provided by this COCO Device.
+RESOURCE_CAPABILITY
+*******************
+
+Table containing information about the Capabilities [link] offered by each of the Resources provided by this COCO Device.
 
 .. sidebar:: Schema
 
