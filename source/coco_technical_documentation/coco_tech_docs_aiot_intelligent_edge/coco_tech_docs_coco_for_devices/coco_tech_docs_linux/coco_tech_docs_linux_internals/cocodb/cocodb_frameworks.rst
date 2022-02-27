@@ -372,6 +372,12 @@ Table containing information about the Capabilities [link] offered by each of th
         - TEXT
         - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. The same Resource EUI can exist on two different COCO Devices, so the Unique Device Identifier (Device ID) must be used in combination with Resource EUI to uniquely identify a Resource across the entire COCONet.
 
+      * - CAPABILITY_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of the supported Capability of the Resource
+
       * - RESOURCE_CAPABILITY_INFO
         - 
         - 
@@ -406,12 +412,134 @@ Table containing information about the Capabilities [link] offered by each of th
 
       * - stdCmdArr
         - Array of int32_t values
-        - Array of the Standard Commands belonging to this capability that are provided by this resource. For possible int32_t values, see the *coco_std_cmd_xxx_t* enum declarations under the header file belonging to each COCO Standard Capability, for e.g. the *coco_std_cmd_on_off_t* enum in *coco_std_data_on_off_types.h* represents the possible Standard Command ID's in the COCO Standard On/Off Capability.
+        - Array of the Standard Commands belonging to this capability that are provided by this resource. For possible int32_t values, see the *coco_std_cmd_xxx_t* enum declarations under the header file belonging to each COCO Standard Capabilities, for e.g. the *coco_std_cmd_on_off_t* enum in *coco_std_data_on_off_types.h* represents the possible Standard Command ID's in the COCO Standard On/Off Capability.
 
 
-*RESOURCE_CAPABILITY_ATTRIBUTE* - Table containing information about the Attributes [link] stored within each of the Capabilities offered by each of the Resources provided by this COCO Device.
+RESOURCE_CAPABILITY_ATTRIBUTE
+*****************************
+
+Table containing information about the Attributes [link] stored within each of the Capabilities offered by each of the Resources provided by this COCO Device.
 
 *REMOVED_RESOURCE* - Table containing the list of Resources that have been removed from this COCO Device. ?????? This is utilized to resolve certain race conditions where different Client Applications may perform successive actions for adding, removing and then once again adding a resource to the COCONet. ??????
+
+.. sidebar:: Schema
+
+   .. list-table::
+      :header-rows: 1
+
+      * - Column
+        - Primary Key
+        - Foreign Key (To Table.Column)
+        - SQLite Data Type
+        - Description
+
+      * - DELETE_FLAG
+        - 
+        - 
+        - TEXT
+        - Set to 'Y' or 'N' to indicate whether the row has been soft-deleted
+
+      * - RESOURCE_EUI
+        - X
+        - To RESOURCE.RESOURCE_EUI (Composite key with CAPABILITY_ID column)
+        - TEXT
+        - Extended Unique Identifier for uniquely identifying the Resource within this COCO Device. The same Resource EUI can exist on two different COCO Devices, so the Unique Device Identifier (Device ID) must be used in combination with Resource EUI to uniquely identify a Resource across the entire COCONet.
+
+      * - CAPABILITY_ID
+        - X
+        - To RESOURCE.CAPABILITY_ID (Composite key with RESOURCE_EUI column)
+        - INT
+        - Unique Identifier of the supported Capability of the Resource. The ID should be one of the values of the enum **coco_std_capability_t** declared in **coco_std_api.h**
+
+      * - ATTRIBUTE_ID
+        - X
+        - 
+        - INT
+        - Unique Identifier of the supported Attribute within the supported Capability of the Resource. For possible Attribute ID values, see the *coco_std_attr_xxx_t* enum declarations under the header file belonging to each COCO Standard Capabilities, for e.g. the *coco_std_attr_on_off_t* enum in *coco_std_data_on_off_types.h* represents the possible Attribute ID's in the COCO Standard On/Off Capability.
+
+      * - RESOURCE_CAP_ATTRIBUTE_INFO
+        - 
+        - 
+        - TEXT
+        - JSON String containing additional information about the resource attribute - see details in table below.
+
+      * - CREATED_TIMESTAMP
+        - 
+        - 
+        - DATETIME
+        - Date and Time when this table record was inserted
+
+      * - CREATED_BY_USER_ID
+        - 
+        - 
+        - TEXT
+        - Not currently in use
+
+
+.. sidebar:: RESOURCE_CAP_ATTRIBUTE_INFO JSON Format
+
+   .. list-table::
+      :header-rows: 1
+
+      * - JSON Field
+        - Data Type
+        - Description
+
+      * - attribName
+        - String
+        - Name of COCO Attribute
+
+      * - attribDesc
+        - String
+        - Description of COCO Attributes
+
+      * - dataArrayLen
+        - uint32_t
+        - Number of elements in the currentValue array, for an array type of attribute
+
+      * - dataType
+        - int32_t
+        - Data Tyoe of Attribute
+
+      * - minValue
+        - Depends on dataType
+        - The minimum permitted value for the attribute by this COCO Device
+
+      * - maxValue
+        - Depends on dataType
+        - The maximum permitted value for the attribute by this COCO Device
+
+      * - defaultValue
+        - Depends on dataType
+        - The default value set for the attribute by this COCO Device
+
+      * - currentValue
+        - Depends on dataType
+        - The current value of the attribute i.e. the value that represents the current state or configured setting or latest reported data for the resource
+
+      * - reportableChange
+        - Depends on dataType
+        - For a numeric attribute, this represents the amount of change in the attribute that will cause the COCO Device to publish an attribute report to all Client Applications
+
+      * - minReportingIntervalMs
+        - uint32_t
+        - The minimum interval (in milliseconds) at which the COCO Device must publish an attribute report to all Client Applications. This means that even if there are multiple changes in the attribute, the COCO Device must publish only one attribute report for every interval denoted by minReportingIntervalMs. For e.g. minReportingIntervalMs = 10 seconds, and the attribute value changes after 5 seconds and 7 seconds. There will be an attribute report at or after the 10-second mark (the exact timing will depend on the maxReportingIntervalMs attribute).
+
+      * - maxReportingIntervalMs
+        - uint32_t
+        - The maximum interval (in milliseconds) at which the COCO Device must publish an attribute report to all Client Applications. This means that even if there is no change in the attribute, the COCO Device must publish an attribute report when the duration denoted by maxReportingIntervalMs has elapsed. For e.g. maxReportingIntervalMs = 5 seconds and an attribute value changes after 17 seconds - there will be attribute reports at 5, 10, 15 and 17 seconds (assume the minReportingInterval is 2 seconds).
+
+      * - isRealTimeUpdate
+        - Boolean
+        - Flag denoting whether or not this represents an actual change in the resource, or whether this is a past attribute report being re-published for the purposes of ensuring the accuracy and reliability of resource data.
+
+      * - persist
+        - uint32_t
+        - Flag denoting whether or not this value is persisted in the cocodb.
+
+      * - lastUpdateTimestamp
+        - uint32_t
+        - The last date and time of this attribute was modified
 
 
 Resource Sub-cluster Information
