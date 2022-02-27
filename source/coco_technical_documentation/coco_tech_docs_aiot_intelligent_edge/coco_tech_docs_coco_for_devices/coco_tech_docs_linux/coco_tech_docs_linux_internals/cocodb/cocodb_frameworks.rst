@@ -420,8 +420,6 @@ RESOURCE_CAPABILITY_ATTRIBUTE
 
 Table containing information about the Attributes [link] stored within each of the Capabilities offered by each of the Resources provided by this COCO Device.
 
-*REMOVED_RESOURCE* - Table containing the list of Resources that have been removed from this COCO Device. ?????? This is utilized to resolve certain race conditions where different Client Applications may perform successive actions for adding, removing and then once again adding a resource to the COCONet. ??????
-
 .. sidebar:: Schema
 
    .. list-table::
@@ -542,6 +540,13 @@ Table containing information about the Attributes [link] stored within each of t
         - The last date and time of this attribute was modified
 
 
+
+REMOVED_RESOURCE
+****************
+
+Table containing the list of Resources that have been removed from this COCO Device. ?????? This is utilized to resolve certain race conditions where different Client Applications may perform successive actions for adding, removing and then once again adding a resource to the COCONet. ??????
+
+
 Resource Sub-cluster Information
 ################################
 
@@ -584,6 +589,7 @@ Rule Information
 *RULE_SCHEDULE_CONDITION* - Table containing information about the Schedule Conditions defined for each of the Rules [link] existing in this COCO Device's COCONet. This contains information about the schedule conditions of all the Rules of the COCONet those the Rules that don't have any actions or conditions relating to the resources provided by this COCO Device.
 
 
+****************************
 Pragmas and DB Configuration
 ****************************
 
@@ -592,49 +598,54 @@ The following SQLite Database Pragmas are configured during the initialization o
 Disk Database Configuration
 ###########################
 
-*PRAGMA FOREIGN_KEYS = ON* - to enable foreign key constraints in the database, to ensure that data integrity is maintained across the tables.
+**PRAGMA FOREIGN_KEYS = ON** - to enable foreign key constraints in the database, to ensure that data integrity is maintained across the tables.
 
-*PRAGMA TEMP_STORE = MEMORY* - to store all of the temporary tables and indices in memory (i.e. in RAM, as opposed to storing them in a file). These temporary tables and indices may be created by SQLite as part of its processing of database transactions. The cocodb library chooses to store these in memory in order to reduce I/O operations to optimize performance, and also to reduce disk space usage on space-constrained COCO Devices.
+**PRAGMA TEMP_STORE = MEMORY** - to store all of the temporary tables and indices in memory (i.e. in RAM, as opposed to storing them in a file). These temporary tables and indices may be created by SQLite as part of its processing of database transactions. The cocodb library chooses to store these in memory in order to reduce I/O operations to optimize performance, and also to reduce disk space usage on space-constrained COCO Devices.
 
-*PRAGMA MAIN.JOURNAL_MODE = PERSIST* - to handle transaction commits in such a manner that the database journal file's first block is overwritten with zeroes (as opposed to either deleting or truncating the file). The cocodb library uses this setting to reduce I/O operations and optimize performance.
+**PRAGMA MAIN.JOURNAL_MODE = PERSIST** - to handle transaction commits in such a manner that the database journal file's first block is overwritten with zeroes (as opposed to either deleting or truncating the file). The cocodb library uses this setting to reduce I/O operations and optimize performance.
 
-*PRAGMA MAIN.CACHE_SIZE = 1000* - to configure the caching of the database file in memory such that it holds up to 1,000 pages in memory before deleting older pages from memory. The cocodb library uses this setting to reduce I/O operations and optimize performance
+**PRAGMA MAIN.CACHE_SIZE = 1000** - to configure the caching of the database file in memory such that it holds up to 1,000 pages in memory before deleting older pages from memory. The cocodb library uses this setting to reduce I/O operations and optimize performance
 
-*PRAGMA MAIN.LOCKING_MODE = EXCLUSIVE* - to configure the file locks on the database file such that they are never released by the cocodb library after acquiring them the first time (as opposed to releasing them at the end of each database write transaction). Since acquiring and releasing locks uses up the compute resources of a COCO Device, the cocodb library uses this setting so that compute utilization is optimized - there is no need for the locks to ever be released once acquired since no other process running on the same COCO Device has a need to update the cocodb.
+**PRAGMA MAIN.LOCKING_MODE = EXCLUSIVE** - to configure the file locks on the database file such that they are never released by the cocodb library after acquiring them the first time (as opposed to releasing them at the end of each database write transaction). Since acquiring and releasing locks uses up the compute resources of a COCO Device, the cocodb library uses this setting so that compute utilization is optimized - there is no need for the locks to ever be released once acquired since no other process running on the same COCO Device has a need to update the cocodb.
 
-*PRAGMA MAIN.SYNCHRONOUS = FULL* - to configure the disk writing mode of the database such that it ensures that all data is completely written to disk before returning from its disk write operation (as opposed to other modes which run faster but are not completely safe). Although this is slow, it ensures that power outages or process crashes will not corrupt the database. We can afford for disk writes to be slower since the disk writing in the cocodb library is done asynchronously from the data already written to the in-memory database.
+**PRAGMA MAIN.SYNCHRONOUS = FULL** - to configure the disk writing mode of the database such that it ensures that all data is completely written to disk before returning from its disk write operation (as opposed to other modes which run faster but are not completely safe). Although this is slow, it ensures that power outages or process crashes will not corrupt the database. We can afford for disk writes to be slower since the disk writing in the cocodb library is done asynchronously from the data already written to the in-memory database.
 
 
 In-Memory Database Configuration
 ################################
 
-*PRAGMA FOREIGN_KEYS = ON* - to enable foreign key constraints in the database, to ensure that data integrity is maintained across the tables.
+**PRAGMA FOREIGN_KEYS = ON** - to enable foreign key constraints in the database, to ensure that data integrity is maintained across the tables.
 
-*PRAGMA TEMP_STORE = MEMORY* - to store all of the temporary tables and indices in memory. See Disk Database Configuration [link] for further explanation of this PRAGMA.
+**PRAGMA TEMP_STORE = MEMORY** - to store all of the temporary tables and indices in memory. See Disk Database Configuration [link] for further explanation of this PRAGMA.
 
-*PRAGMA MAIN.JOURNAL_MODE = MEMORY* - to enable the rollback journal, so that transaction handling will be be done for the in-memory database (note that MEMORY and OFF are the only permissible values of this PRAGMA for an in-memory database).
+**PRAGMA MAIN.JOURNAL_MODE = MEMORY** - to enable the rollback journal, so that transaction handling will be be done for the in-memory database (note that MEMORY and OFF are the only permissible values of this PRAGMA for an in-memory database).
 
-*PRAGMA MAIN.CACHE_SIZE* - not applicable, since by definition, all pages of the in-memory database are always kept in memory.
+**PRAGMA MAIN.CACHE_SIZE** - not applicable, since by definition, all pages of the in-memory database are always kept in memory.
 
-*PRAGMA MAIN.LOCKING_MODE* - not applicable. EXCLUSIVE locking mode is always used for in-memory databases and cannot be changed. See Disk Database Configuration [link] for further explanation of this PRAGMA.
+**PRAGMA MAIN.LOCKING_MODE** - not applicable. EXCLUSIVE locking mode is always used for in-memory databases and cannot be changed. See Disk Database Configuration [link] for further explanation of this PRAGMA.
 
-*PRAGMA MAIN.SYNCHRONOUS = OFF* - to disable any kind of safe data writing of the in-memory database i.e. SQLite does not attempt to ensure the safe writing of data to memory, since this is not necessary due to the volatile nature of the system memory (RAM). See Disk Database Configuration [link] for further explanation of this PRAGMA.
+**PRAGMA MAIN.SYNCHRONOUS = OFF** - to disable any kind of safe data writing of the in-memory database i.e. SQLite does not attempt to ensure the safe writing of data to memory, since this is not necessary due to the volatile nature of the system memory (RAM). See Disk Database Configuration [link] for further explanation of this PRAGMA.
 
+********************
 Transaction Handling - 0:15
 ********************
 
 State Machine
 #############
 
+***********************
 In-Memory Database Copy
 ***********************
 
+****************************************
 Lazy Disk Writing for better performance
 ****************************************
 
+************************************
 Detecting and Handling DB Corruption
 ************************************
 
+*******************************************
 Database Migrations during Firmware Updates
 *******************************************
 
