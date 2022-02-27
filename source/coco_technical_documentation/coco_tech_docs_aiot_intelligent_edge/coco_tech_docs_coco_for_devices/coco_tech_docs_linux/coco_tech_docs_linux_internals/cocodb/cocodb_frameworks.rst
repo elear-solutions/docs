@@ -13,13 +13,16 @@ The following are the tables that make up the COCO Device Database (cocodb). Dur
 Database Version Information
 ############################
 
-**VERSION** - Table containing information about each of the Firmware Versions that this COCO Device has had, and the corresponding Database Version of each Firmware Version, for the purpose of performing any applicable data migrations.
+VERSION
+*******
+
+Table containing information about each of the Firmware Versions that this COCO Device has had, and the corresponding Database Version of each Firmware Version, for the purpose of performing any applicable data migrations.
 
 
 Device Information
 ##################
 
-**DEVICE_INFO** - Table containing information about this COCO Device.
+* **DEVICE_INFO** - Table containing information about this COCO Device.
 
 .. sidebar:: Schema
 
