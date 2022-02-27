@@ -18,7 +18,7 @@ Device Information
 
 *DEVICE_INFO* - Table containing information about this COCO Device.
 
-.. sidebar:: Table
+.. sidebar:: Schema
 
    .. list-table::
       :header-rows: 1
@@ -86,7 +86,7 @@ Network Information
 
 *NETWORK* - Table containing information about the COCONet that this COCO Device belongs to. In the current platform, this table only contains one row since a COCO Device can only belong to one COCONet at a time.
 
-.. sidebar:: Table
+.. sidebar:: Schema
 
    .. list-table::
       :header-rows: 1
@@ -139,7 +139,7 @@ Node Information
 
 *NODE* - Table containing information about the Client Application nodes that exist in the COCONet that this COCO Device belongs to.
 
-.. sidebar:: Table
+.. sidebar:: Schema
 
    .. list-table::
       :header-rows: 1
@@ -222,7 +222,7 @@ Resource Information
 
 *RESOURCE* - Table containing information about the Resources [link] provided by this COCO Device.
 
-.. sidebar:: Table
+.. sidebar:: Schema
 
    .. list-table::
       :header-rows: 1
@@ -264,9 +264,7 @@ Resource Information
         - Not currently in use
 
 
-*RESOURCE_BASIC_INFO JSON Format*
-
-.. sidebar:: Table
+.. sidebar:: RESOURCE_BASIC_INFO JSON Format
 
    .. list-table::
       :header-rows: 1
@@ -309,11 +307,10 @@ Resource Information
 
       * - metadataArr
         - Array of JSON Strings
-        - The metadata of this resource for different Sub-clusters. See *RESOURCE_SUBCLUSTER_METADATA* for further explanation.
+        - The metadata of this resource for different Sub-clusters. See below for the format of the JSON elements. See *RESOURCE_SUBCLUSTER_METADATA* for further explanation.
 
-*metadataArr - Format of JSON Element of Array*
 
-.. sidebar:: Table
+.. sidebar:: metadataArr - Format of JSON Element of Array
 
    .. list-table::
       :header-rows: 1
@@ -333,7 +330,7 @@ Resource Information
 
 *RESOURCE_CAPABILITY* - Table containing information about the Capabilities [link] offered by each of the Resources provided by this COCO Device.
 
-.. sidebar:: Table
+.. sidebar:: Schema
 
    .. list-table::
       :header-rows: 1
@@ -375,9 +372,7 @@ Resource Information
         - Not currently in use
 
 
-*RESOURCE_BASIC_INFO JSON Format*
-
-.. sidebar:: Table
+.. sidebar:: RESOURCE_CAPABILITY_INFO JSON Format
 
    .. list-table::
       :header-rows: 1
@@ -477,9 +472,6 @@ In-Memory Database Configuration
 *PRAGMA MAIN.LOCKING_MODE* - not applicable. EXCLUSIVE locking mode is always used for in-memory databases and cannot be changed. See Disk Database Configuration [link] for further explanation of this PRAGMA.
 
 *PRAGMA MAIN.SYNCHRONOUS = OFF* - to disable any kind of safe data writing of the in-memory database i.e. SQLite does not attempt to ensure the safe writing of data to memory, since this is not necessary due to the volatile nature of the system memory (RAM). See Disk Database Configuration [link] for further explanation of this PRAGMA.
-
-Table Schemas - 0:30
-********************
 
 Transaction Handling - 0:15
 ********************
