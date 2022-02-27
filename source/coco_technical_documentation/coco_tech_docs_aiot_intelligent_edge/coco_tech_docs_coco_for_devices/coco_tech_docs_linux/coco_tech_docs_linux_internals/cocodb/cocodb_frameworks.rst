@@ -8,18 +8,18 @@ Frameworks
 Database Structure
 ******************
 
-The following are the tables that make up the COCO Device Database (cocodb). During library initialization, each of these tables (with the exception of *VERSION*) is created if it doesn't already exist, and the cocodb database itself is created from scratch if it doesn't exist, adding a file named "cocodb" to the working directory of the COCO Device's file system (assuming the database is configured as a persistant one).
+The following are the tables that make up the COCO Device Database (cocodb). During library initialization, each of these tables (with the exception of **VERSION**) is created if it doesn't already exist, and the cocodb database itself is created from scratch if it doesn't exist, adding a file named "cocodb" to the working directory of the COCO Device's file system (assuming the database is configured as a persistant one).
 
 Database Version Information
 ############################
 
-*VERSION* - Table containing information about each of the Firmware Versions that this COCO Device has had, and the corresponding Database Version of each Firmware Version, for the purpose of performing any applicable data migrations.
+**VERSION** - Table containing information about each of the Firmware Versions that this COCO Device has had, and the corresponding Database Version of each Firmware Version, for the purpose of performing any applicable data migrations.
 
 
 Device Information
 ##################
 
-*DEVICE_INFO* - Table containing information about this COCO Device.
+**DEVICE_INFO** - Table containing information about this COCO Device.
 
 .. sidebar:: Schema
 
@@ -81,13 +81,10 @@ Device Information
         - Not currently in use
 
 
-
-
-
 Network Information
 ###################
 
-*NETWORK* - Table containing information about the COCONet that this COCO Device belongs to. In the current platform, this table only contains one row since a COCO Device can only belong to one COCONet at a time.
+**NETWORK** - Table containing information about the COCONet that this COCO Device belongs to. In the current platform, this table only contains one row since a COCO Device can only belong to one COCONet at a time.
 
 .. sidebar:: Schema
 
@@ -140,7 +137,7 @@ Network Information
 Node Information
 ################
 
-*NODE* - Table containing information about the Client Application nodes that exist in the COCONet that this COCO Device belongs to.
+**NODE** - Table containing information about the Client Application nodes that exist in the COCONet that this COCO Device belongs to.
 
 .. sidebar:: Schema
 
@@ -223,7 +220,7 @@ Node Information
 Resource Information
 ####################
 
-*RESOURCE* - Table containing information about the Resources [link] provided by this COCO Device.
+**RESOURCE** - Table containing information about the Resources [link] provided by this COCO Device.
 
 .. sidebar:: Schema
 
@@ -331,7 +328,7 @@ Resource Information
         - Metadata of Resource for this Sub-cluster
 
 
-*RESOURCE_CAPABILITY* - Table containing information about the Capabilities [link] offered by each of the Resources provided by this COCO Device.
+**RESOURCE_CAPABILITY** - Table containing information about the Capabilities [link] offered by each of the Resources provided by this COCO Device.
 
 .. sidebar:: Schema
 
